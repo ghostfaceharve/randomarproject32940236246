@@ -501,7 +501,18 @@
     position: relative;
     overflow: hidden;
   }
-  .product-photo { width:100%; height:100%; object-fit:cover; }
+  .product-photo { 
+    width:100%; 
+    height:100%; 
+    object-fit:cover;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+    opacity: 0;
+    animation: fadeInImg 0.4s ease-in 0.1s forwards;
+  }
+  
+  @keyframes fadeInImg {
+    to { opacity: 1; }
+  }
 
   .grade-badge {
     position: absolute;
@@ -1568,7 +1579,7 @@
     <div class="product-card" onclick="openTier('rcs')" style="cursor:pointer;" data-product-id="mixed">
       <div class="product-img" style="background:linear-gradient(135deg,#f9fafb,#e5e7eb);">
         <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-        <img src="Red Cherry Shrimp Icon.png" alt="Red Cherry Shrimp" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+        <img src="Red Cherry Shrimp Icon.png" alt="Red Cherry Shrimp" class="product-photo" loading="lazy" onerror="this.onerror=null;this.style.display='none'">
       </div>
       <div class="product-body">
         <div class="product-name">Red Cherry Shrimp</div>
@@ -1583,7 +1594,7 @@
     <div class="product-card" onclick="openTier('hg')" style="cursor:pointer;" data-product-id="high">
       <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
         <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-        <img src="Red Cherry Shrimp Icon High.png" alt="Red Cherry Shrimp High Grade" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+        <img src="Red Cherry Shrimp Icon High.png" alt="Red Cherry Shrimp High Grade" class="product-photo" loading="lazy" onerror="this.onerror=null;this.style.display='none'">
       </div>
       <div class="product-body">
         <div class="product-name">Red Cherry Shrimp — High Grade</div>
@@ -1598,7 +1609,7 @@
     <div class="product-card" onclick="openTier('pfr')" style="cursor:pointer;" data-product-id="painted">
       <div class="product-img" style="background:linear-gradient(135deg,#e5e7eb,#9ca3af);">
         <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
-        <img src="Red Cherry Shrimp Icon Painted Fire Red.png" alt="Red Cherry Shrimp Painted Fire Red" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+        <img src="Red Cherry Shrimp Icon Painted Fire Red.png" alt="Red Cherry Shrimp Painted Fire Red" class="product-photo" loading="lazy" onerror="this.onerror=null;this.style.display='none'">
       </div>
       <div class="product-body">
         <div class="product-name">Red Cherry Shrimp — Painted Fire Red</div>
@@ -1613,7 +1624,7 @@
     <div class="product-card" onclick="openTier('bm')" style="cursor:pointer;" data-product-id="bloody">
       <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
         <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
-        <img src="Red Cherry Shrimp Icon Bloody Mary.png" alt="Red Cherry Shrimp Bloody Mary" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+        <img src="Red Cherry Shrimp Icon Bloody Mary.png" alt="Red Cherry Shrimp Bloody Mary" class="product-photo" loading="lazy" onerror="this.onerror=null;this.style.display='none'">
       </div>
       <div class="product-body">
         <div class="product-name">Red Cherry Shrimp — Bloody Mary</div>
@@ -1630,7 +1641,7 @@
     <div class="product-card" onclick="openTier('mystery')" style="cursor:pointer;border:2px solid var(--red);" data-product-id="bundle1">
       <div class="product-img" style="background:linear-gradient(135deg,#fff0ee,#ffe8e5);">
         <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-        <img src="Mystery Box.png" alt="Mystery Box" class="product-photo" onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:3rem;\'>🎁</span>';">
+        <img src="Mystery Box.png" alt="Mystery Box" class="product-photo" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:3rem;\'>🎁</span>';">
       </div>
       <div class="product-body">
         <div class="product-name">Mystery Box</div>
