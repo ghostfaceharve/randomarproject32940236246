@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -8,1398 +7,1439 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-gtag(‘config’, ‘G-LZ53CHEBVZ’);
+  
+  gtag('config', 'G-LZ53CHEBVZ');
 </script>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 <title>AquaShrimp — Premium Red Cherry Shrimp</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
-–red: #ff6b63;
-–red-dark: var(–red);
-–red-light: #fff0ee;
-–red-mid: #ffb3ae;
-–cream: #FDF8F4;
-–dark: #fff0ee;
-–text: #3D1A15;
-–muted: #8B5E59;
-–border: #fdd5d0;
-–white: #ffffff;
-–shadow: 0 2px 20px rgba(255,107,99,0.08);
-}
-
-html {
-scroll-behavior: smooth;
-overflow-x: hidden;
-width: 100%;
-}
-
-body {
-font-family: ‘DM Sans’, sans-serif;
-background: var(–cream);
-color: var(–text);
-font-size: 16px;
-line-height: 1.6;
-overflow-x: hidden;
-width: 100%;
-}
-
-/* NAV */
-nav {
-position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-background: #f9fafb;
-display: flex; align-items: center; justify-content: space-between;
-padding: 0 4rem;
-height: 64px;
-border-bottom: 1.5px solid #e5e7eb;
-box-shadow: 0 2px 16px rgba(107,114,128,0.07);
-}
-
-body { padding-top: 64px; }
-
-.nav-logo {
-font-family: ‘Playfair Display’, serif;
-color: var(–red);
-font-size: 1.3rem;
-letter-spacing: 0.02em;
-display: flex; align-items: center; gap: 10px;
-text-decoration: none;
-}
-
-.nav-logo .dot {
-width: 10px; height: 10px;
-background: var(–red);
-border-radius: 50%;
-animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-0%, 100% { opacity: 1; transform: scale(1); }
-50% { opacity: 0.7; transform: scale(1.3); }
-}
-
-.nav-links {
-display: flex; gap: 2rem;
-list-style: none;
-}
-
-.nav-links a {
-color: #9ca3af;
-text-decoration: none;
-font-size: 0.875rem;
-font-weight: 500;
-letter-spacing: 0.04em;
-transition: color 0.2s;
-}
-
-.nav-links a:hover { color: var(–red); }
-
-.nav-cart {
-background: var(–red);
-color: white;
-border: none;
-padding: 8px 20px;
-border-radius: 40px;
-font-family: ‘DM Sans’, sans-serif;
-font-size: 0.875rem;
-font-weight: 500;
-cursor: pointer;
-display: flex; align-items: center; gap: 8px;
-transition: background 0.2s, transform 0.1s;
-}
-
-.nav-cart:hover { background: var(–red-dark); }
-.nav-cart:active { transform: scale(0.97); }
-
-.cart-badge {
-background: white;
-color: var(–red);
-border-radius: 50%;
-width: 18px; height: 18px;
-font-size: 11px;
-font-weight: 700;
-display: flex; align-items: center; justify-content: center;
-}
-
-/* HERO */
-.hero {
-background: #fff5f3;
-padding: 7rem 4rem 6rem;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 4rem;
-align-items: center;
-overflow: hidden;
-position: relative;
-}
-
-.hero::before {
-content: ‘’;
-position: absolute;
-right: -100px; top: -100px;
-width: 500px; height: 500px;
-background: radial-gradient(circle, rgba(107,114,128,0.18) 0%, transparent 70%);
-pointer-events: none;
-}
-
-.hero-tag {
-display: inline-flex;
-align-items: center;
-gap: 6px;
-background: var(–red);
-color: #ffffff;
-font-size: 0.8rem;
-letter-spacing: 0.14em;
-text-transform: uppercase;
-font-weight: 700;
-padding: 8px 18px;
-border-radius: 40px;
-margin-bottom: 1.5rem;
-box-shadow: 0 4px 18px rgba(255,107,99,0.35);
-}
-
-.hero h1 {
-font-family: ‘Playfair Display’, serif;
-color: var(–text);
-font-size: clamp(2.4rem, 4vw, 3.6rem);
-line-height: 1.15;
-margin-bottom: 1.25rem;
-}
-
-.hero h1 em {
-font-style: italic;
-color: var(–red);
-}
-
-.hero p {
-color: #8B5E59;
-font-size: 1rem;
-max-width: 440px;
-line-height: 1.75;
-margin-bottom: 2rem;
-font-weight: 300;
-}
-
-.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-.btn-primary {
-background: var(–red);
-color: white;
-border: none;
-padding: 14px 28px;
-border-radius: 40px;
-font-family: ‘DM Sans’, sans-serif;
-font-size: 0.9375rem;
-font-weight: 500;
-cursor: pointer;
-text-decoration: none;
-display: inline-flex; align-items: center; gap: 8px;
-transition: background 0.2s, transform 0.1s;
-}
-
-.btn-primary:hover { background: var(–red-dark); transform: translateY(-1px); }
-.btn-primary:active { transform: scale(0.97); }
-
-.btn-ghost {
-background: transparent;
-color: var(–red);
-border: 1.5px solid var(–red);
-padding: 13px 24px;
-border-radius: 40px;
-font-family: ‘DM Sans’, sans-serif;
-font-size: 0.9375rem;
-cursor: pointer;
-text-decoration: none;
-display: inline-flex; align-items: center; gap: 8px;
-transition: border-color 0.2s, color 0.2s, background 0.2s;
-}
-
-.btn-ghost:hover { background: var(–red); color: white; }
-
-/* SHRIMP TANK ILLUSTRATION */
-.hero-visual {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-}
-
-.tank {
-width: 340px;
-height: 280px;
-background: linear-gradient(180deg, #0a2a40 0%, #0d3b59 50%, #0a2a40 100%);
-border-radius: 12px;
-border: 2px solid rgba(255,255,255,0.08);
-position: relative;
-overflow: hidden;
-box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
-}
-
-.tank::before {
-content: ‘’;
-position: absolute;
-top: 0; left: 0; right: 0;
-height: 3px;
-background: linear-gradient(90deg, transparent, rgba(100,200,255,0.4), transparent);
-}
-
-.bubbles {
-position: absolute; inset: 0;
-}
-
-.bubble {
-position: absolute;
-width: 5px; height: 5px;
-background: rgba(150,220,255,0.25);
-border-radius: 50%;
-animation: rise linear infinite;
-}
-
-@keyframes rise {
-0% { transform: translateY(280px); opacity: 0; }
-10% { opacity: 1; }
-90% { opacity: 0.4; }
-100% { transform: translateY(-10px); opacity: 0; }
-}
-
-.b1 { left: 20%; animation-duration: 4s; animation-delay: 0s; }
-.b2 { left: 40%; animation-duration: 5.5s; animation-delay: 1s; width: 3px; height: 3px; }
-.b3 { left: 60%; animation-duration: 3.5s; animation-delay: 2s; }
-.b4 { left: 75%; animation-duration: 6s; animation-delay: 0.5s; width: 4px; height: 4px; }
-.b5 { left: 30%; animation-duration: 4.5s; animation-delay: 3s; width: 3px; height: 3px; }
-
-/* Substrate */
-.substrate {
-position: absolute;
-bottom: 0; left: 0; right: 0;
-height: 42px;
-background: linear-gradient(180deg, #3d2a1a 0%, #2a1a0e 100%);
-border-radius: 0 0 10px 10px;
-}
-
-.substrate::before {
-content: ‘’;
-position: absolute;
-top: -6px; left: 0; right: 0; height: 12px;
-background: radial-gradient(ellipse at center, #5c3d25 30%, transparent 70%);
-}
-
-/* Plants */
-.plant {
-position: absolute;
-bottom: 36px;
-}
-
-.plant svg { display: block; }
-
-/* Shrimp — realistic walkers */
-.shrimp {
-position: absolute;
-bottom: 42px;
-cursor: default;
-user-select: none;
-}
-
-.shrimp img {
-height: 28px;
-width: auto;
-display: block;
-filter: drop-shadow(0 2px 5px rgba(0,0,0,0.45));
-mix-blend-mode: multiply;
-}
-
-/* Bob/scuttle on the image itself */
-@keyframes bob {
-0%   { transform: translateY(0px)  rotate(0deg); }
-20%  { transform: translateY(-3px) rotate(1.5deg); }
-40%  { transform: translateY(-1px) rotate(-1deg); }
-60%  { transform: translateY(-4px) rotate(1deg); }
-80%  { transform: translateY(-2px) rotate(-1.5deg); }
-100% { transform: translateY(0px)  rotate(0deg); }
-}
-
-.shrimp img { animation: bob 0.55s ease-in-out infinite; }
-
-/* Each shrimp walks a unique path and flips at the turnaround */
-@keyframes walk-s1 {
-0%   { transform: translateX(20px)  scaleX(1);  }
-47%  { transform: translateX(270px) scaleX(1);  }
-50%  { transform: translateX(270px) scaleX(-1); }
-97%  { transform: translateX(20px)  scaleX(-1); }
-100% { transform: translateX(20px)  scaleX(1);  }
-}
-@keyframes walk-s2 {
-0%   { transform: translateX(60px)  scaleX(-1); }
-45%  { transform: translateX(240px) scaleX(-1); }
-50%  { transform: translateX(240px) scaleX(1);  }
-95%  { transform: translateX(60px)  scaleX(1);  }
-100% { transform: translateX(60px)  scaleX(-1); }
-}
-@keyframes walk-s3 {
-0%   { transform: translateX(30px)  scaleX(1);  }
-48%  { transform: translateX(290px) scaleX(1);  }
-50%  { transform: translateX(290px) scaleX(-1); }
-98%  { transform: translateX(30px)  scaleX(-1); }
-100% { transform: translateX(30px)  scaleX(1);  }
-}
-@keyframes walk-s4 {
-0%   { transform: translateX(80px)  scaleX(1);  }
-46%  { transform: translateX(250px) scaleX(1);  }
-50%  { transform: translateX(250px) scaleX(-1); }
-96%  { transform: translateX(80px)  scaleX(-1); }
-100% { transform: translateX(80px)  scaleX(1);  }
-}
-@keyframes walk-s5 {
-0%   { transform: translateX(10px)  scaleX(-1); }
-47%  { transform: translateX(200px) scaleX(-1); }
-50%  { transform: translateX(200px) scaleX(1);  }
-97%  { transform: translateX(10px)  scaleX(1);  }
-100% { transform: translateX(10px)  scaleX(-1); }
-}
-
-.s1 { bottom: 44px; animation: walk-s1 11s linear infinite; }
-.s1 img { animation: bob 0.52s ease-in-out infinite; height: 26px; }
-
-.s2 { bottom: 46px; animation: walk-s2 14s linear infinite; animation-delay: -4s; }
-.s2 img { animation: bob 0.48s ease-in-out infinite; animation-delay: -0.1s; height: 22px; }
-
-.s3 { bottom: 43px; animation: walk-s3 9s linear infinite; animation-delay: -2s; }
-.s3 img { animation: bob 0.58s ease-in-out infinite; animation-delay: -0.2s; height: 24px; }
-
-.s4 { bottom: 45px; animation: walk-s4 12s linear infinite; animation-delay: -7s; }
-.s4 img { animation: bob 0.45s ease-in-out infinite; animation-delay: -0.3s; height: 20px; }
-
-.s5 { bottom: 44px; animation: walk-s5 16s linear infinite; animation-delay: -10s; }
-.s5 img { animation: bob 0.6s ease-in-out infinite; animation-delay: -0.15s; height: 23px; }
-
-.tank-label {
-position: absolute;
-bottom: 10px; right: 12px;
-font-size: 10px;
-color: rgba(10,42,64,0.35);
-letter-spacing: 0.08em;
-font-family: ‘DM Sans’, sans-serif;
-}
-
-/* STATS BAR */
-.stats-bar {
-background: #f9fafb;
-border-top: 1.5px solid #e5e7eb;
-border-bottom: 1.5px solid #e5e7eb;
-display: flex;
-justify-content: center;
-gap: 4rem;
-padding: 1.25rem 4rem;
-flex-wrap: wrap;
-}
-
-.stat-item {
-text-align: center;
-color: var(–red);
-}
-
-.stat-number {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.75rem;
-font-weight: 700;
-display: block;
-line-height: 1;
-}
-
-.stat-label {
-font-size: 0.75rem;
-color: #9ca3af;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-font-weight: 400;
-margin-top: 2px;
-}
-
-/* SECTION */
-section { padding: 3rem 4rem; }
-
-.section-header {
-margin-bottom: 1.5rem;
-}
-
-.section-tag {
-display: inline-block;
-font-size: 0.75rem;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(–red);
-font-weight: 500;
-margin-bottom: 0.75rem;
-}
-
-.section-header h2 {
-font-family: ‘Playfair Display’, serif;
-font-size: clamp(1.8rem, 3vw, 2.4rem);
-color: var(–text);
-line-height: 1.2;
-}
-
-.section-header p {
-color: var(–muted);
-margin-top: 0.75rem;
-max-width: 480px;
-font-weight: 300;
-}
-
-/* PRODUCT GRID */
-.products-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-gap: 2rem;
-}
-
-.product-card {
-background: var(–white);
-border-radius: 16px;
-overflow: hidden;
-border: 1px solid var(–border);
-transition: transform 0.2s, box-shadow 0.2s;
-cursor: pointer;
-}
-
-.product-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 16px 40px rgba(107,114,128,0.12);
-}
-
-.product-img {
-height: 320px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 72px;
-position: relative;
-overflow: hidden;
-}
-.product-photo { width:100%; height:100%; object-fit:cover; }
-
-.grade-badge {
-position: absolute;
-top: 12px; left: 12px;
-background: #fff5f3;
-color: var(–red);
-font-size: 0.7rem;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-font-weight: 500;
-padding: 4px 10px;
-border-radius: 40px;
-}
-
-.stock-badge {
-position: absolute;
-top: 12px; left: 12px;
-padding: 4px 10px;
-border-radius: 20px;
-font-size: 0.65rem;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-}
-
-.stock-in { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-.stock-low { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-.stock-out { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-
-details[open] summary span { transform: rotate(45deg); }
-summary { transition: all 0.2s; }
-summary span { transition: transform 0.2s; display: inline-block; }
-
-.product-body {
-padding: 1.5rem;
-}
-
-.product-name {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.25rem;
-color: var(–text);
-margin-bottom: 6px;
-}
-
-.product-desc {
-font-size: 0.875rem;
-color: var(–muted);
-font-weight: 300;
-line-height: 1.5;
-margin-bottom: 1rem;
-}
-
-.product-footer {
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-.product-price {
-font-size: 1.25rem;
-font-weight: 600;
-color: var(–red-dark);
-}
-
-.product-price small {
-font-size: 0.75rem;
-color: var(–muted);
-font-weight: 400;
-margin-left: 2px;
-}
-
-.add-btn {
-background: var(–red);
-color: white;
-border: none;
-width: 36px; height: 36px;
-border-radius: 50%;
-font-size: 1.25rem;
-cursor: pointer;
-display: flex; align-items: center; justify-content: center;
-transition: background 0.2s, transform 0.1s;
-font-weight: 300;
-line-height: 1;
-}
-
-.add-btn:hover { background: var(–red-dark); }
-.add-btn:active { transform: scale(0.9); }
-
-/* CARE SECTION */
-.care-section {
-background: #fff5f3;
-color: var(–text);
-}
-
-.care-section .section-header h2 { color: var(–text); }
-.care-section .section-tag { color: var(–red); }
-.care-section .section-header p { color: var(–muted); }
-
-.care-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 1.25rem;
-}
-
-.care-card {
-background: rgba(107,114,128,0.06);
-border: 1px solid rgba(107,114,128,0.12);
-border-radius: 12px;
-padding: 1.5rem;
-transition: background 0.2s;
-}
-
-.care-card:hover {
-background: rgba(107,114,128,0.1);
-}
-
-.care-icon {
-font-size: 1.75rem;
-margin-bottom: 0.75rem;
-display: block;
-}
-
-.care-card h4 {
-font-size: 0.875rem;
-font-weight: 500;
-letter-spacing: 0.04em;
-margin-bottom: 0.5rem;
-color: var(–text);
-}
-
-.care-card p {
-font-size: 0.8125rem;
-color: #4a3330;
-font-weight: 400;
-line-height: 1.6;
-}
-
-.care-value {
-display: block;
-font-size: 1.1rem;
-font-weight: 600;
-color: var(–red);
-margin-top: 4px;
-}
-
-/* TESTIMONIALS */
-.testimonials-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 1.5rem;
-}
-
-.testimonial {
-background: var(–white);
-border: 1px solid var(–border);
-border-radius: 16px;
-padding: 1.5rem;
-}
-
-.stars {
-color: var(–red);
-font-size: 0.875rem;
-letter-spacing: 2px;
-margin-bottom: 0.75rem;
-}
-
-.testimonial p {
-font-size: 0.9375rem;
-color: var(–text);
-font-style: italic;
-font-family: ‘Playfair Display’, serif;
-line-height: 1.65;
-margin-bottom: 1rem;
-}
-
-.reviewer {
-font-size: 0.8125rem;
-font-weight: 500;
-color: var(–muted);
-}
-
-/* DELIVERY BANNER */
-.delivery-banner {
-background: var(–red-light);
-border: 1px solid var(–red-mid);
-border-radius: 12px;
-padding: 1.5rem 2rem;
-display: flex;
-align-items: center;
-gap: 1.5rem;
-margin: -3rem 4rem 4rem;
-flex-wrap: wrap;
-}
-
-.delivery-banner .icon { font-size: 2rem; }
-
-.delivery-banner h3 {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.1rem;
-color: var(–red-dark);
-margin-bottom: 2px;
-}
-
-.delivery-banner p {
-font-size: 0.875rem;
-color: var(–muted);
-font-weight: 300;
-}
-
-/* CART DRAWER */
-.cart-overlay {
-position: fixed; inset: 0;
-background: rgba(0,0,0,0.5);
-z-index: 200;
-opacity: 0; pointer-events: none;
-transition: opacity 0.3s;
-}
-
-.cart-overlay.open { opacity: 1; pointer-events: all; }
-
-.cart-drawer {
-position: fixed;
-top: 0; right: 0; bottom: 0;
-width: 380px;
-background: var(–white);
-z-index: 201;
-transform: translateX(100%);
-transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
-display: flex; flex-direction: column;
-box-shadow: -8px 0 40px rgba(0,0,0,0.15);
-}
-
-.cart-drawer.open { transform: translateX(0); }
-
-.cart-header {
-padding: 1.5rem;
-border-bottom: 1px solid var(–border);
-display: flex; justify-content: space-between; align-items: center;
-}
-
-.cart-header h3 {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.2rem;
-color: var(–text);
-}
-
-.close-btn {
-background: none; border: none;
-font-size: 1.4rem; cursor: pointer;
-color: var(–muted);
-line-height: 1;
-padding: 4px;
-border-radius: 6px;
-transition: background 0.2s;
-}
-
-.close-btn:hover { background: var(–red-light); color: var(–red); }
-
-.cart-items {
-flex: 1; overflow-y: auto;
-padding: 1rem 1.5rem;
-}
-
-.cart-item {
-display: flex; gap: 1rem; align-items: center;
-padding: 1rem 0;
-border-bottom: 1px solid var(–border);
-}
-
-.cart-item-icon { font-size: 2rem; }
-
-.cart-item-name {
-font-weight: 500; font-size: 0.9375rem; color: var(–text);
-}
-
-.cart-item-price { font-size: 0.875rem; color: var(–muted); margin-top: 2px; }
-
-.cart-item-qty {
-display: flex; align-items: center; gap: 8px;
-margin-left: auto;
-}
-
-.qty-btn {
-background: var(–red-light);
-border: 1px solid var(–border);
-color: var(–red);
-width: 28px; height: 28px;
-border-radius: 50%;
-font-size: 1rem; font-weight: 500;
-cursor: pointer; display: flex; align-items: center; justify-content: center;
-transition: background 0.2s;
-}
-
-.qty-btn:hover { background: var(–red); color: white; }
-
-.qty-num { font-size: 0.9375rem; font-weight: 500; min-width: 20px; text-align: center; }
-
-.cart-empty {
-text-align: center;
-padding: 3rem 1rem;
-color: var(–muted);
-}
-
-.cart-empty .empty-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
-
-.cart-footer {
-padding: 1.5rem;
-border-top: 1px solid var(–border);
-}
-
-.cart-total {
-display: flex; justify-content: space-between; align-items: baseline;
-margin-bottom: 1rem;
-}
-
-.cart-total span:first-child { font-size: 0.875rem; color: var(–muted); }
-.cart-total span:last-child { font-size: 1.375rem; font-weight: 600; color: var(–text); font-family: ‘Playfair Display’, serif; }
-
-.checkout-btn {
-width: 100%;
-background: var(–red);
-color: white;
-border: none;
-padding: 15px;
-border-radius: 40px;
-font-family: ‘DM Sans’, sans-serif;
-font-size: 1rem;
-font-weight: 500;
-cursor: pointer;
-transition: background 0.2s;
-}
-
-.checkout-btn:hover { background: var(–red-dark); }
-
-/* FOOTER */
-footer {
-background: #fff5f3;
-color: var(–muted);
-text-align: center;
-padding: 2rem 4rem;
-font-size: 0.8125rem;
-font-weight: 300;
-letter-spacing: 0.02em;
-}
-
-footer strong { color: var(–text); font-weight: 500; }
-
-/* Toast */
-.toast {
-position: fixed;
-top: 50%; left: 50%;
-transform: translate(-50%, -50%) scale(0);
-background: var(–white);
-color: var(–red);
-padding: 2rem 3rem;
-border-radius: 20px;
-font-size: 1.25rem;
-font-weight: 600;
-z-index: 300;
-transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
-pointer-events: none;
-white-space: nowrap;
-border: 2px solid var(–red);
-box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-opacity: 0;
-}
-
-.toast.show {
-transform: translate(-50%, -50%) scale(1);
-opacity: 1;
-}
-
-@keyframes toastPulse {
-0%, 100% { transform: translate(-50%, -50%) scale(1); }
-50% { transform: translate(-50%, -50%) scale(1.05); }
-}
-
-.toast.show {
-animation: toastPulse 0.6s ease-in-out;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-/* AGGRESSIVE SPACING FIX - FORCE EVERYTHING COMPACT */
-* {
-min-height: 0 !important;
-}
-
-```
-nav { padding: 0 1.25rem; }
-.nav-links { display: none; }
-
-/* Prevent horizontal scroll */
-section {
-  max-width: 100%;
-  overflow-x: hidden;
-  padding: 1rem 1rem !important;
-  margin: 0 !important;
-}
-
-/* Remove all excessive spacing */
-.care-section {
-  padding-top: 0rem !important;
-  margin-top: 0rem !important;
-}
-
-#shop {
-  padding-bottom: 0rem !important;
-  margin-bottom: 0rem !important;
-}
-
-.delivery-banner { 
-  margin: 0 1rem 0.5rem !important;
-  padding: 1rem !important;
-}
-
-.products-grid,
-.care-grid,
-.contact-cards,
-.stats-bar {
-  max-width: 100%;
-}
-
-/* Make logo smaller on mobile */
-.nav-logo {
-  font-size: 1.1rem !important;
-}
-
-/* Reduce gap between buttons */
-nav > div:last-child {
-  gap: 0.3rem !important;
-}
-
-/* Make cart and account buttons smaller on mobile (but not too small) */
-.nav-cart {
-  padding: 6px 12px !important;
-  font-size: 0.75rem !important;
-  gap: 4px !important;
-  border-radius: 20px !important;
-}
-
-#accountBtn {
-  padding: 6px 12px !important;
-  font-size: 0.75rem !important;
-  border-radius: 6px !important;
-}
-
-.cart-badge {
-  width: 17px !important;
-  height: 17px !important;
-  font-size: 0.68rem !important;
-  line-height: 17px !important;
-}
-
-.hero {
-  padding: 2rem 1.25rem 1.5rem;
-  grid-template-columns: 1fr;
-  gap: 0;
-}
-.hero-visual { display: none; }
-.hero h1 { font-size: 2rem; margin-bottom: 0.75rem; }
-.hero p { font-size: 0.9rem; margin-bottom: 1.25rem; }
-.hero-tag { font-size: 0.7rem; margin-bottom: 1rem; }
-.hero-btns { gap: 0.75rem; }
-
-.section-header { margin-bottom: 1rem; }
-.section-header h2 { font-size: 1.5rem; }
-
-.stats-bar {
-  padding: 0.75rem 1rem;
-  gap: 0.75rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.stat-number { font-size: 1.3rem; }
-
-.products-grid { 
-  gap: 0.75rem;
-  grid-template-columns: 1fr;
-  max-width: 380px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  margin-bottom: 0 !important;
-}
-.product-card { 
-  border-radius: 10px; 
-  flex-direction: column;
-}
-.product-img {
-  width: 100%;
-  min-width: 100%;
-  height: 240px;
-}
-.product-body {
-  padding: 1.25rem;
-}
-
-/* care grid — 2 columns, no gap overflow */
-.care-grid {
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-}
-.care-card {
-  padding: 0.85rem;
-}
-.care-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
-.care-card h4 { font-size: 0.8rem; }
-.care-card p { font-size: 0.75rem; line-height: 1.5; }
-.care-value { font-size: 0.8rem; }
-
-.cart-drawer { width: 100%; }
-
-/* Fix tier modal spacing on mobile */
-.tier-overlay {
-  padding: 0.5rem !important;
-}
-.tier-modal {
-  max-height: none !important;
-  min-height: 0 !important;
-  height: auto !important;
-}
-.tier-header {
-  padding: 1rem !important;
-}
-.tier-list {
-  padding: 0.75rem !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  height: auto !important;
-  overflow-y: visible !important;
-}
-.tier-option {
-  margin-bottom: 0.5rem !important;
-  padding: 0.75rem !important;
-}
-.tier-footer {
-  padding: 1rem !important;
-}
-
-/* contact cards stack tightly */
-#contact > div { gap: 0.5rem !important; }
-#contact > div > a,
-#contact > div > div {
-  padding: 1rem !important;
-  gap: 0.6rem !important;
-  border-radius: 10px !important;
-}
-
-/* policy cards */
-#policy > div { gap: 0.5rem !important; }
-#policy > div > div {
-  padding: 1rem !important;
-  border-radius: 10px !important;
-}
-
-/* reviews */
-#reviews > div { gap: 0.5rem; }
-
-/* faq */
-#faq details { padding: 1rem !important; font-size: 0.95rem; }
-#faq summary { font-size: 0.95rem !important; }
-
-/* shipping */
-#shipping > div { gap: 0.75rem !important; }
-#shipping h3 { font-size: 1.05rem !important; }
-
-/* gallery */
-#gallery > div { grid-template-columns: 1fr 1fr !important; gap: 0.5rem !important; }
-
-/* calculator */
-#calculator > div { padding: 1.5rem !important; }
-
-/* email popup */
-#emailPopup > div { padding: 2rem 1.5rem !important; }
-#emailPopup h3 { font-size: 1.4rem !important; }
-```
-
-}
-
-/* ── CHECKOUT MODAL ───────────────────────────────────── */
-.co-overlay {
-position:fixed;inset:0;
-background:rgba(0,0,0,0.55);
-backdrop-filter:blur(6px);
-z-index:400;
-display:flex;align-items:center;justify-content:center;
-opacity:0;pointer-events:none;
-transition:opacity 0.3s;
-padding:1rem;
-}
-.co-overlay.open{opacity:1;pointer-events:all;}
-
-.co-modal {
-background:#f7f7f7;
-border-radius:16px;
-width:100%;max-width:980px;
-max-height:94vh;
-display:flex;flex-direction:column;
-overflow:hidden;
-box-shadow:0 40px 100px rgba(0,0,0,0.28);
-transform:translateY(20px) scale(0.98);
-transition:transform 0.35s cubic-bezier(0.34,1.2,0.64,1);
-}
-.co-overlay.open .co-modal{transform:translateY(0) scale(1);}
-
-/* top bar */
-.co-topbar {
-background:#f9fafb;
-border-bottom: 1.5px solid #e5e7eb;
-padding:0 2rem;
-height:52px;
-display:flex;align-items:center;justify-content:space-between;
-flex-shrink:0;
-}
-.co-topbar-logo{font-family:“Playfair Display”,serif;color:var(–red);font-size:1rem;display:flex;align-items:center;gap:8px;}
-.co-topbar-logo .dot{width:7px;height:7px;background:var(–red);border-radius:50%;}
-.co-topbar-close{background:none;border:none;color:#9ca3af;font-size:1.2rem;cursor:pointer;line-height:1;padding:6px;border-radius:6px;transition:color 0.2s;}
-.co-topbar-close:hover{color:var(–red);}
-
-/* stepper bar */
-.co-stepbar {
-background:white;
-border-bottom:1px solid #e5e5e5;
-display:flex;
-padding:0 2rem;
-flex-shrink:0;
-}
-.co-step{display:flex;align-items:center;gap:8px;font-size:0.775rem;font-weight:500;color:#aaa;padding:0.9rem 0;border-bottom:2px solid transparent;margin-right:2rem;cursor:default;transition:color 0.2s,border-color 0.2s;white-space:nowrap;}
-.co-step.active{color:var(–red);border-bottom-color:var(–red);}
-.co-step.done{color:#333;}
-.co-step-num{width:20px;height:20px;border-radius:50%;background:#eee;color:#aaa;font-size:0.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;transition:background 0.2s,color 0.2s;flex-shrink:0;}
-.co-step.active .co-step-num{background:var(–red);color:white;}
-.co-step.done .co-step-num{background:#27ae60;color:white;}
-.co-step.done .co-step-num::before{content:“✓”;}
-
-/* body */
-.co-body {
-display:flex;flex:1;overflow:hidden;min-height:0;
-}
-
-/* left form col */
-.co-left {
-flex:1;overflow-y:auto;
-padding:2rem 2.25rem;
-background:#f7f7f7;
-}
-
-/* right summary col */
-.co-right {
-width:320px;min-width:280px;
-background:white;
-border-left:1px solid #e5e5e5;
-overflow-y:auto;
-padding:2rem 1.75rem;
-display:flex;flex-direction:column;
-gap:0;
-}
-.co-right h4{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;font-weight:500;margin-bottom:1rem;}
-.co-sum-item{display:flex;align-items:center;gap:10px;padding:0.65rem 0;border-bottom:1px solid #f0f0f0;}
-.co-sum-icon{font-size:1.5rem;}
-.co-sum-name{font-size:0.8375rem;color:#333;flex:1;font-weight:400;line-height:1.4;}
-.co-sum-qty{font-size:0.7rem;background:#f0f0f0;color:#888;padding:2px 7px;border-radius:20px;margin-left:3px;}
-.co-sum-price{font-size:0.875rem;color:#111;font-weight:600;}
-.co-sum-divider{border:none;border-top:1px solid #eee;margin:1rem 0 0.75rem;}
-.co-sum-row{display:flex;justify-content:space-between;font-size:0.8375rem;color:#666;margin-bottom:0.4rem;}
-.co-sum-row.total{font-size:1rem;font-weight:700;color:#111;margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid #eee;}
-.co-sum-shipping-note{font-size:0.75rem;color:#aaa;margin-top:0.5rem;line-height:1.5;}
-
-/* express checkout */
-.express-section{margin-bottom:1.5rem;}
-.express-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;font-weight:500;text-align:center;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.75rem;}
-.express-label::before,.express-label::after{content:””;flex:1;height:1px;background:#e5e5e5;}
-.express-btns{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;}
-.express-btn{
-border:1.5px solid #e0e0e0;background:white;
-border-radius:8px;height:44px;
-display:flex;align-items:center;justify-content:center;gap:7px;
-cursor:pointer;font-size:0.8rem;font-weight:600;
-transition:border-color 0.2s,background 0.2s,transform 0.1s;
-font-family:“DM Sans”,sans-serif;color:#111;
-}
-.express-btn:hover{border-color:#bbb;background:#fafafa;transform:translateY(-1px);}
-.express-btn:active{transform:scale(0.97);}
-.express-btn.apple{background:#000;color:white;border-color:#000;}
-.express-btn.apple:hover{background:#222;border-color:#222;}
-.express-btn.google{border-color:#e0e0e0;}
-.express-btn.paypal{background:#003087;color:white;border-color:#003087;}
-.express-btn.paypal:hover{background:#002070;}
-.express-btn.later{background:#FFB3C7;color:#111;border-color:#FFB3C7;font-size:0.75rem;}
-.express-btn.later:hover{background:#f9a0b5;}
-.express-divider{text-align:center;font-size:0.775rem;color:#aaa;margin:1.25rem 0 1.5rem;position:relative;}
-.express-divider::before{content:””;position:absolute;left:0;top:50%;right:0;height:1px;background:#e5e5e5;}
-.express-divider span{background:#f7f7f7;padding:0 0.75rem;position:relative;}
-
-/* form fields */
-.co-section-title{font-size:1rem;font-weight:600;color:#111;margin-bottom:1.25rem;letter-spacing:-0.01em;}
-.co-row{display:flex;gap:0.875rem;}
-.co-row .co-field{flex:1;}
-.co-field{margin-bottom:0.875rem;}
-.co-field label{display:block;font-size:0.75rem;font-weight:500;color:#555;margin-bottom:5px;}
-.co-field label .req{color:var(–red);}
-.co-field input,.co-field select{
-width:100%;padding:10px 13px;
-border:1.5px solid #ddd;border-radius:8px;
-font-family:“DM Sans”,sans-serif;font-size:0.9375rem;color:#111;
-background:white;outline:none;
-transition:border-color 0.2s,box-shadow 0.2s;
--webkit-appearance:none;
-}
-.co-field input:focus,.co-field select:focus{border-color:var(–red);box-shadow:0 0 0 3px rgba(107,114,128,0.1);}
-.co-field .err-msg{font-size:0.73rem;color:#e74c3c;margin-top:4px;display:none;}
-.co-field.has-error .err-msg{display:block;}
-.co-field.has-error input,.co-field.has-error select{border-color:#e74c3c;}
-
-/* delivery options */
-.delivery-options{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1rem;}
-.delivery-opt{border:1.5px solid #ddd;border-radius:10px;padding:0.875rem 1.125rem;display:flex;align-items:center;gap:0.875rem;cursor:pointer;background:white;transition:border-color 0.2s,box-shadow 0.2s;}
-.delivery-opt:hover{border-color:#bbb;}
-.delivery-opt.selected{border-color:var(–red);box-shadow:0 0 0 3px rgba(107,114,128,0.08);}
-.delivery-opt-radio{width:18px;height:18px;border-radius:50%;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 0.2s;}
-.delivery-opt.selected .delivery-opt-radio{border-color:var(–red);}
-.delivery-opt.selected .delivery-opt-radio::after{content:””;width:8px;height:8px;border-radius:50%;background:var(–red);display:block;}
-.delivery-opt-info{flex:1;}
-.delivery-opt-info strong{font-size:0.875rem;color:#111;font-weight:600;display:block;}
-.delivery-opt-info span{font-size:0.775rem;color:#888;font-weight:400;}
-.delivery-opt-price{font-weight:700;color:#111;font-size:0.9375rem;}
-
-/* payment step */
-.stripe-secure{background:#f0faf4;border:1px solid #c3e6cb;border-radius:8px;padding:0.875rem 1rem;font-size:0.8125rem;color:#1a6b35;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px;}
-.accepted-cards{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.25rem;}
-.ac{background:white;border:1.5px solid #e0e0e0;border-radius:6px;padding:4px 10px;font-size:0.7rem;font-weight:700;color:#555;letter-spacing:0.04em;}
-
-/* bottom bar */
-.co-footer{
-background:white;
-border-top:1px solid #e5e5e5;
-padding:1rem 2.25rem;
-display:flex;align-items:center;justify-content:space-between;
-flex-shrink:0;
-}
-.co-back-btn{background:none;border:none;cursor:pointer;font-family:“DM Sans”,sans-serif;font-size:0.875rem;color:#888;display:flex;align-items:center;gap:6px;padding:8px 0;transition:color 0.2s;}
-.co-back-btn:hover{color:#333;}
-.co-next-btn{background:var(–red);color:white;border:none;padding:12px 32px;border-radius:8px;font-family:“DM Sans”,sans-serif;font-size:0.9375rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.1s;letter-spacing:-0.01em;}
-.co-next-btn:hover{background:var(–red-dark);}
-.co-next-btn:active{transform:scale(0.97);}
-.co-next-btn:disabled{background:#ddd;color:#aaa;cursor:not-allowed;transform:none;}
-
-/* success */
-.co-success{display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 2rem;flex:1;}
-.co-success.show{display:flex;}
-.co-success-icon{font-size:3.5rem;margin-bottom:1.25rem;}
-.co-success h3{font-family:“Playfair Display”,serif;font-size:1.5rem;color:var(–dark);margin-bottom:0.75rem;}
-.co-success p{color:#888;font-weight:300;max-width:320px;line-height:1.7;}
-.co-success-order{margin-top:1.25rem;background:#f7f7f7;border:1px solid #e5e5e5;border-radius:10px;padding:1rem 1.5rem;font-size:0.875rem;color:#444;line-height:1.7;}
-
-```
-@media (max-width: 700px) {
-.co-right{display:none;}
-.co-modal{border-radius:12px;}
-.co-left{padding:1.25rem;}
-.co-footer{padding:0.875rem 1.25rem;}
-.co-row{flex-direction:column;gap:0;}
-.express-btns{grid-template-columns:1fr 1fr;}
-```
-
-}
-
-/* ── TIER PICKER MODAL ─────────────────────────────────── */
-.tier-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);z-index:500;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity 0.25s;}
-.tier-overlay.open{opacity:1;pointer-events:all;}
-.tier-modal{background:white;border-radius:18px;width:100%;max-width:480px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.22);transform:translateY(16px) scale(0.97);transition:transform 0.3s cubic-bezier(0.34,1.2,0.64,1);}
-.tier-overlay.open .tier-modal{transform:translateY(0) scale(1);}
-.tier-header{background:#f9fafb;border-bottom:1.5px solid #e5e7eb;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;}
-.tier-header h3{font-family:“Playfair Display”,serif;color:var(–text);font-size:1.1rem;}
-.tier-header p{font-size:0.775rem;color:#8B5E59;margin-top:2px;}
-.tier-close{background:none;border:none;color:#9ca3af;font-size:1.2rem;cursor:pointer;padding:4px 8px;border-radius:6px;transition:color 0.2s;}
-.tier-close:hover{color:var(–red);}
-.tier-list{padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.6rem;}
-.tier-option{display:flex;align-items:center;gap:1rem;border:1.5px solid #e5e5e5;border-radius:10px;padding:0.875rem 1.125rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s,background 0.2s;background:white;}
-.tier-option:hover{border-color:#bbb;background:#fafafa;}
-.tier-option.selected{border-color:var(–red);box-shadow:0 0 0 3px rgba(107,114,128,0.09);background:var(–red-light);}
-.tier-option.popular-tier{border:2px solid var(–red);background:linear-gradient(135deg,#fff5f4,#ffe8e5);position:relative;}
-.tier-option.popular-tier::before{content:””;position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:10px;background:linear-gradient(135deg,var(–red),#ff8a80);opacity:0.15;pointer-events:none;z-index:-1;}
-.tier-option.best-deal-tier{border:2.5px solid #ff6b63;background:linear-gradient(135deg,#fff8f0,#ffe4d6);position:relative;box-shadow:0 4px 12px rgba(255,107,99,0.2);}
-.tier-option.best-deal-tier::before{content:””;position:absolute;top:-2px;right:-2px;bottom:-2px;left:-2px;border-radius:10px;background:linear-gradient(135deg,#ff6b63,#ff8a80);opacity:0.08;pointer-events:none;z-index:-1;animation:pulse 2s ease-in-out infinite;}
-@keyframes pulse{0%,100%{opacity:0.08;}50%{opacity:0.15;}}
-.tier-radio{width:18px;height:18px;border-radius:50%;border:2px solid #ddd;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:border-color 0.2s;}
-.tier-option.selected .tier-radio{border-color:var(–red);}
-.tier-option.selected .tier-radio::after{content:””;width:8px;height:8px;border-radius:50%;background:var(–red);display:block;}
-.tier-qty{font-size:1.5rem;flex-shrink:0;}
-.tier-info{flex:1;}
-.tier-info strong{font-size:0.9375rem;color:#111;font-weight:600;display:block;margin-bottom:2px;}
-.tier-info span{font-size:0.775rem;color:#888;font-weight:300;display:block;}
-.tier-badge{display:inline-block;background:transparent;color:var(–red);font-size:0.75rem;font-weight:700;padding:0;border-radius:0;margin:3px 0;text-transform:none;letter-spacing:0;}
-.tier-savings{color:var(–red);font-weight:600;font-size:0.75rem;margin-top:2px;}
-.tier-price{text-align:right;}
-.tier-price .main{font-size:1.1rem;font-weight:700;color:var(–red-dark);display:block;}
-.tier-price .per{font-size:0.725rem;color:#aaa;}
-.tier-footer{padding:1rem 1.5rem 1.5rem;display:flex;gap:0.75rem;}
-.tier-add-btn{flex:1;background:var(–red);color:white;border:none;padding:13px;border-radius:8px;font-family:“DM Sans”,sans-serif;font-size:0.9375rem;font-weight:600;cursor:pointer;transition:background 0.2s;}
-.tier-add-btn:hover{background:var(–red-dark);}
-.tier-add-btn:disabled{background:#ddd;color:#aaa;cursor:not-allowed;}
-.tier-cancel{background:none;border:1.5px solid #e5e5e5;color:#888;padding:13px 18px;border-radius:8px;font-family:“DM Sans”,sans-serif;font-size:0.9375rem;cursor:pointer;transition:border-color 0.2s,color 0.2s;}
-.tier-cancel:hover{border-color:#bbb;color:#333;}
-
-/* ── SCROLL REVEAL ── */
-.reveal {
-opacity: 0;
-transform: translateY(32px);
-transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
-}
-.reveal.visible {
-opacity: 1;
-transform: translateY(0);
-}
-.reveal-left {
-opacity: 0;
-transform: translateX(-32px);
-transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
-}
-.reveal-left.visible { opacity: 1; transform: translateX(0); }
-.reveal-right {
-opacity: 0;
-transform: translateX(32px);
-transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
-}
-.reveal-right.visible { opacity: 1; transform: translateX(0); }
-
-/* staggered children */
-.stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1); }
-.stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0s; }
-.stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.1s; }
-.stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.2s; }
-.stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.3s; }
-.stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.4s; }
-
-/* ── PRODUCT CARDS ── */
-.product-card {
-transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s cubic-bezier(0.22,1,0.36,1) !important;
-}
-.product-card:hover {
-transform: translateY(-8px) scale(1.01) !important;
-box-shadow: 0 20px 48px rgba(0,0,0,0.12) !important;
-}
-.product-card .product-img img {
-transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
-}
-.product-card:hover .product-img img {
-transform: scale(1.07);
-}
-
-/* ── BUTTONS ── */
-.btn-primary, .btn-ghost, .add-btn, .checkout-btn, .tier-add-btn {
-transition: background 0.2s, transform 0.2s cubic-bezier(0.22,1,0.36,1), box-shadow 0.2s !important;
-}
-.btn-primary:hover { box-shadow: 0 8px 24px rgba(107,114,128,0.3) !important; }
-.add-btn:hover { transform: scale(1.05) !important; box-shadow: 0 4px 16px rgba(107,114,128,0.25) !important; }
-
-/* ── NAV ── */
-nav {
-transition: box-shadow 0.3s, background 0.3s;
-}
-nav.scrolled {
-box-shadow: 0 2px 24px rgba(107,114,128,0.1);
-background: rgba(255,245,244,0.98) !important;
-backdrop-filter: blur(8px);
-}
-.nav-links a {
-position: relative;
-}
-.nav-links a::after {
-content: ‘’;
-position: absolute;
-bottom: -3px;
-left: 0;
-width: 0;
-height: 2px;
-background: var(–red-mid);
-transition: width 0.25s cubic-bezier(0.22,1,0.36,1);
-border-radius: 2px;
-}
-.nav-links a:hover::after { width: 100%; }
-
-/* ── CARE CARDS ── */
-.care-card {
-transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s !important;
-}
-.care-card:hover {
-transform: translateY(-5px) !important;
-box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
-}
-
-/* ── SECTION HEADERS ── */
-.section-tag {
-transition: letter-spacing 0.3s;
-}
-
-/* ── PAGE LOAD ── */
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(20px); }
-to   { opacity: 1; transform: translateY(0); }
-}
-.hero > * {
-animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) both;
-}
-.hero > *:nth-child(2) { animation-delay: 0.1s; }
-.hero > *:nth-child(3) { animation-delay: 0.2s; }
-.hero > *:nth-child(4) { animation-delay: 0.3s; }
-
-/* ── SMOOTH SECTION TRANSITIONS ── */
-section { transition: background 0.4s; }
+  :root {
+    --red: #ff6b63;
+    --red-dark: var(--red);
+    --red-light: #fff0ee;
+    --red-mid: #ffb3ae;
+    --cream: #FDF8F4;
+    --dark: #fff0ee;
+    --text: #3D1A15;
+    --muted: #8B5E59;
+    --border: #fdd5d0;
+    --white: #ffffff;
+    --shadow: 0 2px 20px rgba(255,107,99,0.08);
+  }
+
+  html { 
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  /* Container for large screens */
+  nav,
+  section,
+  .hero,
+  footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* High DPI display optimization */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: #f9fafb;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 4rem;
+    height: 64px;
+    border-bottom: 1.5px solid #e5e7eb;
+    box-shadow: 0 2px 16px rgba(107,114,128,0.07);
+  }
+
+  body { padding-top: 64px; }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--red);
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo .dot {
+    width: 10px; height: 10px;
+    background: var(--red);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.3); }
+  }
+
+  .nav-links {
+    display: flex; gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--red); }
+
+  .nav-cart {
+    background: var(--red);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 8px;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .nav-cart:hover { background: var(--red-dark); }
+  .nav-cart:active { transform: scale(0.97); }
+
+  .cart-badge {
+    background: white;
+    color: var(--red);
+    border-radius: 50%;
+    width: 18px; height: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* HERO */
+  .hero {
+    background: #fff5f3;
+    padding: 7rem 4rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: -100px; top: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(107,114,128,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--red);
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 40px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 18px rgba(255,107,99,0.35);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text);
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--red);
+  }
+
+  .hero p {
+    color: #8B5E59;
+    font-size: 1rem;
+    max-width: 440px;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn-primary {
+    background: var(--red);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .btn-primary:active { transform: scale(0.97); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--red);
+    border: 1.5px solid var(--red);
+    padding: 13px 24px;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+
+  .btn-ghost:hover { background: var(--red); color: white; }
+
+  /* SHRIMP TANK ILLUSTRATION */
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .tank {
+    width: 340px;
+    height: 280px;
+    background: linear-gradient(180deg, #0a2a40 0%, #0d3b59 50%, #0a2a40 100%);
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+  }
+
+  .tank::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(100,200,255,0.4), transparent);
+  }
+
+  .bubbles {
+    position: absolute; inset: 0;
+  }
+
+  .bubble {
+    position: absolute;
+    width: 5px; height: 5px;
+    background: rgba(150,220,255,0.25);
+    border-radius: 50%;
+    animation: rise linear infinite;
+  }
+
+  @keyframes rise {
+    0% { transform: translateY(280px); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.4; }
+    100% { transform: translateY(-10px); opacity: 0; }
+  }
+
+  .b1 { left: 20%; animation-duration: 4s; animation-delay: 0s; }
+  .b2 { left: 40%; animation-duration: 5.5s; animation-delay: 1s; width: 3px; height: 3px; }
+  .b3 { left: 60%; animation-duration: 3.5s; animation-delay: 2s; }
+  .b4 { left: 75%; animation-duration: 6s; animation-delay: 0.5s; width: 4px; height: 4px; }
+  .b5 { left: 30%; animation-duration: 4.5s; animation-delay: 3s; width: 3px; height: 3px; }
+
+  /* Substrate */
+  .substrate {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 42px;
+    background: linear-gradient(180deg, #3d2a1a 0%, #2a1a0e 100%);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .substrate::before {
+    content: '';
+    position: absolute;
+    top: -6px; left: 0; right: 0; height: 12px;
+    background: radial-gradient(ellipse at center, #5c3d25 30%, transparent 70%);
+  }
+
+  /* Plants */
+  .plant {
+    position: absolute;
+    bottom: 36px;
+  }
+
+  .plant svg { display: block; }
+
+  /* Shrimp — realistic walkers */
+  .shrimp {
+    position: absolute;
+    bottom: 42px;
+    cursor: default;
+    user-select: none;
+  }
+
+  .shrimp img {
+    height: 28px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.45));
+    mix-blend-mode: multiply;
+  }
+
+  /* Bob/scuttle on the image itself */
+  @keyframes bob {
+    0%   { transform: translateY(0px)  rotate(0deg); }
+    20%  { transform: translateY(-3px) rotate(1.5deg); }
+    40%  { transform: translateY(-1px) rotate(-1deg); }
+    60%  { transform: translateY(-4px) rotate(1deg); }
+    80%  { transform: translateY(-2px) rotate(-1.5deg); }
+    100% { transform: translateY(0px)  rotate(0deg); }
+  }
+
+  .shrimp img { animation: bob 0.55s ease-in-out infinite; }
+
+  /* Each shrimp walks a unique path and flips at the turnaround */
+  @keyframes walk-s1 {
+    0%   { transform: translateX(20px)  scaleX(1);  }
+    47%  { transform: translateX(270px) scaleX(1);  }
+    50%  { transform: translateX(270px) scaleX(-1); }
+    97%  { transform: translateX(20px)  scaleX(-1); }
+    100% { transform: translateX(20px)  scaleX(1);  }
+  }
+  @keyframes walk-s2 {
+    0%   { transform: translateX(60px)  scaleX(-1); }
+    45%  { transform: translateX(240px) scaleX(-1); }
+    50%  { transform: translateX(240px) scaleX(1);  }
+    95%  { transform: translateX(60px)  scaleX(1);  }
+    100% { transform: translateX(60px)  scaleX(-1); }
+  }
+  @keyframes walk-s3 {
+    0%   { transform: translateX(30px)  scaleX(1);  }
+    48%  { transform: translateX(290px) scaleX(1);  }
+    50%  { transform: translateX(290px) scaleX(-1); }
+    98%  { transform: translateX(30px)  scaleX(-1); }
+    100% { transform: translateX(30px)  scaleX(1);  }
+  }
+  @keyframes walk-s4 {
+    0%   { transform: translateX(80px)  scaleX(1);  }
+    46%  { transform: translateX(250px) scaleX(1);  }
+    50%  { transform: translateX(250px) scaleX(-1); }
+    96%  { transform: translateX(80px)  scaleX(-1); }
+    100% { transform: translateX(80px)  scaleX(1);  }
+  }
+  @keyframes walk-s5 {
+    0%   { transform: translateX(10px)  scaleX(-1); }
+    47%  { transform: translateX(200px) scaleX(-1); }
+    50%  { transform: translateX(200px) scaleX(1);  }
+    97%  { transform: translateX(10px)  scaleX(1);  }
+    100% { transform: translateX(10px)  scaleX(-1); }
+  }
+
+  .s1 { bottom: 44px; animation: walk-s1 11s linear infinite; }
+  .s1 img { animation: bob 0.52s ease-in-out infinite; height: 26px; }
+
+  .s2 { bottom: 46px; animation: walk-s2 14s linear infinite; animation-delay: -4s; }
+  .s2 img { animation: bob 0.48s ease-in-out infinite; animation-delay: -0.1s; height: 22px; }
+
+  .s3 { bottom: 43px; animation: walk-s3 9s linear infinite; animation-delay: -2s; }
+  .s3 img { animation: bob 0.58s ease-in-out infinite; animation-delay: -0.2s; height: 24px; }
+
+  .s4 { bottom: 45px; animation: walk-s4 12s linear infinite; animation-delay: -7s; }
+  .s4 img { animation: bob 0.45s ease-in-out infinite; animation-delay: -0.3s; height: 20px; }
+
+  .s5 { bottom: 44px; animation: walk-s5 16s linear infinite; animation-delay: -10s; }
+  .s5 img { animation: bob 0.6s ease-in-out infinite; animation-delay: -0.15s; height: 23px; }
+
+  .tank-label {
+    position: absolute;
+    bottom: 10px; right: 12px;
+    font-size: 10px;
+    color: rgba(10,42,64,0.35);
+    letter-spacing: 0.08em;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: #f9fafb;
+    border-top: 1.5px solid #e5e7eb;
+    border-bottom: 1.5px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1.25rem 4rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    text-align: center;
+    color: var(--red);
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  /* SECTION */
+  section { padding: 3rem 4rem; }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .section-header p {
+    color: var(--muted);
+    margin-top: 0.75rem;
+    max-width: 480px;
+    font-weight: 300;
+  }
+
+  /* PRODUCT GRID */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(107,114,128,0.12);
+  }
+
+  .product-img {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-photo { width:100%; height:100%; object-fit:cover; }
+
+  .grade-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: #fff5f3;
+    color: var(--red);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 40px;
+  }
+
+  .stock-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .stock-in { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+  .stock-low { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+  .stock-out { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+  details[open] summary span { transform: rotate(45deg); }
+  summary { transition: all 0.2s; }
+  summary span { transition: transform 0.2s; display: inline-block; }
+
+  .product-body {
+    padding: 1.5rem;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .product-desc {
+    font-size: 0.875rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--red-dark);
+  }
+
+  .product-price small {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 400;
+    margin-left: 2px;
+  }
+
+  .add-btn {
+    background: var(--red);
+    color: white;
+    border: none;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s, transform 0.1s;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .add-btn:hover { background: var(--red-dark); }
+  .add-btn:active { transform: scale(0.9); }
+
+  /* CARE SECTION */
+  .care-section {
+    background: #fff5f3;
+    color: var(--text);
+  }
+
+  .care-section .section-header h2 { color: var(--text); }
+  .care-section .section-tag { color: var(--red); }
+  .care-section .section-header p { color: var(--muted); }
+
+  .care-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .care-card {
+    background: rgba(107,114,128,0.06);
+    border: 1px solid rgba(107,114,128,0.12);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: background 0.2s;
+  }
+
+  .care-card:hover {
+    background: rgba(107,114,128,0.1);
+  }
+
+  .care-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .care-card h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+
+  .care-card p {
+    font-size: 0.8125rem;
+    color: #4a3330;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .care-value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--red);
+    margin-top: 4px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .testimonial {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+  }
+
+  .stars {
+    color: var(--red);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial p {
+    font-size: 0.9375rem;
+    color: var(--text);
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+
+  .reviewer {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  /* DELIVERY BANNER */
+  .delivery-banner {
+    background: var(--red-light);
+    border: 1px solid var(--red-mid);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: -3rem 4rem 4rem;
+    flex-wrap: wrap;
+  }
+
+  .delivery-banner .icon { font-size: 2rem; }
+
+  .delivery-banner h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--red-dark);
+    margin-bottom: 2px;
+  }
+
+  .delivery-banner p {
+    font-size: 0.875rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* CART DRAWER */
+  .cart-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .cart-overlay.open { opacity: 1; pointer-events: all; }
+
+  .cart-drawer {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 380px;
+    background: var(--white);
+    z-index: 201;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    display: flex; flex-direction: column;
+    box-shadow: -8px 0 40px rgba(0,0,0,0.15);
+  }
+
+  .cart-drawer.open { transform: translateX(0); }
+
+  .cart-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+
+  .cart-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--text);
+  }
+
+  .close-btn {
+    background: none; border: none;
+    font-size: 1.4rem; cursor: pointer;
+    color: var(--muted);
+    line-height: 1;
+    padding: 4px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+
+  .close-btn:hover { background: var(--red-light); color: var(--red); }
+
+  .cart-items {
+    flex: 1; overflow-y: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .cart-item {
+    display: flex; gap: 1rem; align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cart-item-icon { font-size: 2rem; }
+
+  .cart-item-name {
+    font-weight: 500; font-size: 0.9375rem; color: var(--text);
+  }
+
+  .cart-item-price { font-size: 0.875rem; color: var(--muted); margin-top: 2px; }
+
+  .cart-item-qty {
+    display: flex; align-items: center; gap: 8px;
+    margin-left: auto;
+  }
+
+  .qty-btn {
+    background: var(--red-light);
+    border: 1px solid var(--border);
+    color: var(--red);
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    font-size: 1rem; font-weight: 500;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+
+  .qty-btn:hover { background: var(--red); color: white; }
+
+  .qty-num { font-size: 0.9375rem; font-weight: 500; min-width: 20px; text-align: center; }
+
+  .cart-empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--muted);
+  }
+
+  .cart-empty .empty-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
+
+  .cart-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .cart-total {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 1rem;
+  }
+
+  .cart-total span:first-child { font-size: 0.875rem; color: var(--muted); }
+  .cart-total span:last-child { font-size: 1.375rem; font-weight: 600; color: var(--text); font-family: 'Playfair Display', serif; }
+
+  .checkout-btn {
+    width: 100%;
+    background: var(--red);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .checkout-btn:hover { background: var(--red-dark); }
+
+  /* FOOTER */
+  footer {
+    background: #fff5f3;
+    color: var(--muted);
+    text-align: center;
+    padding: 2rem 4rem;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  footer strong { color: var(--text); font-weight: 500; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: var(--white);
+    color: var(--red);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    z-index: 300;
+    transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    pointer-events: none;
+    white-space: nowrap;
+    border: 2px solid var(--red);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    opacity: 0;
+  }
+
+  .toast.show { 
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 1;
+  }
+  
+  @keyframes toastPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.05); }
+  }
+  
+  .toast.show {
+    animation: toastPulse 0.6s ease-in-out;
+  }
+
+  /* RESPONSIVE */
+  
+  /* TABLET / CHROMEBOOK (768px - 1200px) */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    nav { padding: 0 2rem; }
+    
+    section { padding: 2.5rem 2rem; }
+    
+    .hero {
+      padding: 5rem 2rem 4rem;
+      gap: 2rem;
+    }
+    
+    .products-grid {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .care-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-bar {
+      padding: 1.5rem 2rem;
+    }
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    /* AGGRESSIVE SPACING FIX - FORCE EVERYTHING COMPACT */
+    * {
+      min-height: 0 !important;
+    }
+    
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; }
+    
+    /* Prevent horizontal scroll */
+    section {
+      max-width: 100%;
+      overflow-x: hidden;
+      padding: 1rem 1rem !important;
+      margin: 0 !important;
+    }
+    
+    /* Remove all excessive spacing */
+    .care-section {
+      padding-top: 0rem !important;
+      margin-top: 0rem !important;
+    }
+    
+    #shop {
+      padding-bottom: 0rem !important;
+      margin-bottom: 0rem !important;
+    }
+    
+    .delivery-banner { 
+      margin: 0 1rem 0.5rem !important;
+      padding: 1rem !important;
+    }
+    
+    .products-grid,
+    .care-grid,
+    .contact-cards,
+    .stats-bar {
+      max-width: 100%;
+    }
+    
+    /* Make logo smaller on mobile */
+    .nav-logo {
+      font-size: 1.1rem !important;
+    }
+    
+    /* Reduce gap between buttons */
+    nav > div:last-child {
+      gap: 0.3rem !important;
+    }
+    
+    /* Make cart and account buttons smaller on mobile (but not too small) */
+    .nav-cart {
+      padding: 6px 12px !important;
+      font-size: 0.75rem !important;
+      gap: 4px !important;
+      border-radius: 20px !important;
+    }
+    
+    #accountBtn {
+      padding: 6px 12px !important;
+      font-size: 0.75rem !important;
+      border-radius: 6px !important;
+    }
+    
+    .cart-badge {
+      width: 17px !important;
+      height: 17px !important;
+      font-size: 0.68rem !important;
+      line-height: 17px !important;
+    }
+
+    .hero {
+      padding: 2rem 1.25rem 1.5rem;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .hero-visual { display: none; }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+    .hero p { font-size: 0.9rem; margin-bottom: 1.25rem; }
+    .hero-tag { font-size: 0.7rem; margin-bottom: 1rem; }
+    .hero-btns { gap: 0.75rem; }
+
+    .section-header { margin-bottom: 1rem; }
+    .section-header h2 { font-size: 1.5rem; }
+
+    .stats-bar {
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .stat-number { font-size: 1.3rem; }
+
+    .products-grid { 
+      gap: 0.75rem;
+      grid-template-columns: 1fr;
+      max-width: 380px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      margin-bottom: 0 !important;
+    }
+    .product-card { 
+      border-radius: 10px; 
+      flex-direction: column;
+    }
+    .product-img {
+      width: 100%;
+      min-width: 100%;
+      height: 240px;
+    }
+    .product-body {
+      padding: 1.25rem;
+    }
+
+    /* care grid — 2 columns, no gap overflow */
+    .care-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .care-card {
+      padding: 0.85rem;
+    }
+    .care-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
+    .care-card h4 { font-size: 0.8rem; }
+    .care-card p { font-size: 0.75rem; line-height: 1.5; }
+    .care-value { font-size: 0.8rem; }
+
+    .cart-drawer { width: 100%; }
+    
+    /* Fix tier modal spacing on mobile */
+    .tier-overlay {
+      padding: 0.5rem !important;
+    }
+    .tier-modal {
+      max-height: none !important;
+      min-height: 0 !important;
+      height: auto !important;
+    }
+    .tier-header {
+      padding: 1rem !important;
+    }
+    .tier-list {
+      padding: 0.75rem !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      height: auto !important;
+      overflow-y: visible !important;
+    }
+    .tier-option {
+      margin-bottom: 0.5rem !important;
+      padding: 0.75rem !important;
+    }
+    .tier-footer {
+      padding: 1rem !important;
+    }
+
+    /* contact cards stack tightly */
+    #contact > div { gap: 0.5rem !important; }
+    #contact > div > a,
+    #contact > div > div {
+      padding: 1rem !important;
+      gap: 0.6rem !important;
+      border-radius: 10px !important;
+    }
+
+    /* policy cards */
+    #policy > div { gap: 0.5rem !important; }
+    #policy > div > div {
+      padding: 1rem !important;
+      border-radius: 10px !important;
+    }
+
+    /* reviews */
+    #reviews > div { gap: 0.5rem; }
+    
+    /* faq */
+    #faq details { padding: 1rem !important; font-size: 0.95rem; }
+    #faq summary { font-size: 0.95rem !important; }
+    
+    /* shipping */
+    #shipping > div { gap: 0.75rem !important; }
+    #shipping h3 { font-size: 1.05rem !important; }
+    
+    /* gallery */
+    #gallery > div { grid-template-columns: 1fr 1fr !important; gap: 0.5rem !important; }
+    
+    /* calculator */
+    #calculator > div { padding: 1.5rem !important; }
+    
+    /* email popup */
+    #emailPopup > div { padding: 2rem 1.5rem !important; }
+    #emailPopup h3 { font-size: 1.4rem !important; }
+  }
+
+  /* ── CHECKOUT MODAL ───────────────────────────────────── */
+  .co-overlay {
+    position:fixed;inset:0;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(6px);
+    z-index:400;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;
+    transition:opacity 0.3s;
+    padding:1rem;
+  }
+  .co-overlay.open{opacity:1;pointer-events:all;}
+
+  .co-modal {
+    background:#f7f7f7;
+    border-radius:16px;
+    width:100%;max-width:980px;
+    max-height:94vh;
+    display:flex;flex-direction:column;
+    overflow:hidden;
+    box-shadow:0 40px 100px rgba(0,0,0,0.28);
+    transform:translateY(20px) scale(0.98);
+    transition:transform 0.35s cubic-bezier(0.34,1.2,0.64,1);
+  }
+  .co-overlay.open .co-modal{transform:translateY(0) scale(1);}
+
+  /* top bar */
+  .co-topbar {
+    background:#f9fafb;
+    border-bottom: 1.5px solid #e5e7eb;
+    padding:0 2rem;
+    height:52px;
+    display:flex;align-items:center;justify-content:space-between;
+    flex-shrink:0;
+  }
+  .co-topbar-logo{font-family:"Playfair Display",serif;color:var(--red);font-size:1rem;display:flex;align-items:center;gap:8px;}
+  .co-topbar-logo .dot{width:7px;height:7px;background:var(--red);border-radius:50%;}
+  .co-topbar-close{background:none;border:none;color:#9ca3af;font-size:1.2rem;cursor:pointer;line-height:1;padding:6px;border-radius:6px;transition:color 0.2s;}
+  .co-topbar-close:hover{color:var(--red);}
+
+  /* stepper bar */
+  .co-stepbar {
+    background:white;
+    border-bottom:1px solid #e5e5e5;
+    display:flex;
+    padding:0 2rem;
+    flex-shrink:0;
+  }
+  .co-step{display:flex;align-items:center;gap:8px;font-size:0.775rem;font-weight:500;color:#aaa;padding:0.9rem 0;border-bottom:2px solid transparent;margin-right:2rem;cursor:default;transition:color 0.2s,border-color 0.2s;white-space:nowrap;}
+  .co-step.active{color:var(--red);border-bottom-color:var(--red);}
+  .co-step.done{color:#333;}
+  .co-step-num{width:20px;height:20px;border-radius:50%;background:#eee;color:#aaa;font-size:0.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;transition:background 0.2s,color 0.2s;flex-shrink:0;}
+  .co-step.active .co-step-num{background:var(--red);color:white;}
+  .co-step.done .co-step-num{background:#27ae60;color:white;}
+  .co-step.done .co-step-num::before{content:"✓";}
+
+  /* body */
+  .co-body {
+    display:flex;flex:1;overflow:hidden;min-height:0;
+  }
+
+  /* left form col */
+  .co-left {
+    flex:1;overflow-y:auto;
+    padding:2rem 2.25rem;
+    background:#f7f7f7;
+  }
+
+  /* right summary col */
+  .co-right {
+    width:320px;min-width:280px;
+    background:white;
+    border-left:1px solid #e5e5e5;
+    overflow-y:auto;
+    padding:2rem 1.75rem;
+    display:flex;flex-direction:column;
+    gap:0;
+  }
+  .co-right h4{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;font-weight:500;margin-bottom:1rem;}
+  .co-sum-item{display:flex;align-items:center;gap:10px;padding:0.65rem 0;border-bottom:1px solid #f0f0f0;}
+  .co-sum-icon{font-size:1.5rem;}
+  .co-sum-name{font-size:0.8375rem;color:#333;flex:1;font-weight:400;line-height:1.4;}
+  .co-sum-qty{font-size:0.7rem;background:#f0f0f0;color:#888;padding:2px 7px;border-radius:20px;margin-left:3px;}
+  .co-sum-price{font-size:0.875rem;color:#111;font-weight:600;}
+  .co-sum-divider{border:none;border-top:1px solid #eee;margin:1rem 0 0.75rem;}
+  .co-sum-row{display:flex;justify-content:space-between;font-size:0.8375rem;color:#666;margin-bottom:0.4rem;}
+  .co-sum-row.total{font-size:1rem;font-weight:700;color:#111;margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid #eee;}
+  .co-sum-shipping-note{font-size:0.75rem;color:#aaa;margin-top:0.5rem;line-height:1.5;}
+
+  /* express checkout */
+  .express-section{margin-bottom:1.5rem;}
+  .express-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;font-weight:500;text-align:center;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.75rem;}
+  .express-label::before,.express-label::after{content:"";flex:1;height:1px;background:#e5e5e5;}
+  .express-btns{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;}
+  .express-btn{
+    border:1.5px solid #e0e0e0;background:white;
+    border-radius:8px;height:44px;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    cursor:pointer;font-size:0.8rem;font-weight:600;
+    transition:border-color 0.2s,background 0.2s,transform 0.1s;
+    font-family:"DM Sans",sans-serif;color:#111;
+  }
+  .express-btn:hover{border-color:#bbb;background:#fafafa;transform:translateY(-1px);}
+  .express-btn:active{transform:scale(0.97);}
+  .express-btn.apple{background:#000;color:white;border-color:#000;}
+  .express-btn.apple:hover{background:#222;border-color:#222;}
+  .express-btn.google{border-color:#e0e0e0;}
+  .express-btn.paypal{background:#003087;color:white;border-color:#003087;}
+  .express-btn.paypal:hover{background:#002070;}
+  .express-btn.later{background:#FFB3C7;color:#111;border-color:#FFB3C7;font-size:0.75rem;}
+  .express-btn.later:hover{background:#f9a0b5;}
+  .express-divider{text-align:center;font-size:0.775rem;color:#aaa;margin:1.25rem 0 1.5rem;position:relative;}
+  .express-divider::before{content:"";position:absolute;left:0;top:50%;right:0;height:1px;background:#e5e5e5;}
+  .express-divider span{background:#f7f7f7;padding:0 0.75rem;position:relative;}
+
+  /* form fields */
+  .co-section-title{font-size:1rem;font-weight:600;color:#111;margin-bottom:1.25rem;letter-spacing:-0.01em;}
+  .co-row{display:flex;gap:0.875rem;}
+  .co-row .co-field{flex:1;}
+  .co-field{margin-bottom:0.875rem;}
+  .co-field label{display:block;font-size:0.75rem;font-weight:500;color:#555;margin-bottom:5px;}
+  .co-field label .req{color:var(--red);}
+  .co-field input,.co-field select{
+    width:100%;padding:10px 13px;
+    border:1.5px solid #ddd;border-radius:8px;
+    font-family:"DM Sans",sans-serif;font-size:0.9375rem;color:#111;
+    background:white;outline:none;
+    transition:border-color 0.2s,box-shadow 0.2s;
+    -webkit-appearance:none;
+  }
+  .co-field input:focus,.co-field select:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(107,114,128,0.1);}
+  .co-field .err-msg{font-size:0.73rem;color:#e74c3c;margin-top:4px;display:none;}
+  .co-field.has-error .err-msg{display:block;}
+  .co-field.has-error input,.co-field.has-error select{border-color:#e74c3c;}
+
+  /* delivery options */
+  .delivery-options{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1rem;}
+  .delivery-opt{border:1.5px solid #ddd;border-radius:10px;padding:0.875rem 1.125rem;display:flex;align-items:center;gap:0.875rem;cursor:pointer;background:white;transition:border-color 0.2s,box-shadow 0.2s;}
+  .delivery-opt:hover{border-color:#bbb;}
+  .delivery-opt.selected{border-color:var(--red);box-shadow:0 0 0 3px rgba(107,114,128,0.08);}
+  .delivery-opt-radio{width:18px;height:18px;border-radius:50%;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 0.2s;}
+  .delivery-opt.selected .delivery-opt-radio{border-color:var(--red);}
+  .delivery-opt.selected .delivery-opt-radio::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);display:block;}
+  .delivery-opt-info{flex:1;}
+  .delivery-opt-info strong{font-size:0.875rem;color:#111;font-weight:600;display:block;}
+  .delivery-opt-info span{font-size:0.775rem;color:#888;font-weight:400;}
+  .delivery-opt-price{font-weight:700;color:#111;font-size:0.9375rem;}
+
+  /* payment step */
+  .stripe-secure{background:#f0faf4;border:1px solid #c3e6cb;border-radius:8px;padding:0.875rem 1rem;font-size:0.8125rem;color:#1a6b35;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px;}
+  .accepted-cards{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.25rem;}
+  .ac{background:white;border:1.5px solid #e0e0e0;border-radius:6px;padding:4px 10px;font-size:0.7rem;font-weight:700;color:#555;letter-spacing:0.04em;}
+
+  /* bottom bar */
+  .co-footer{
+    background:white;
+    border-top:1px solid #e5e5e5;
+    padding:1rem 2.25rem;
+    display:flex;align-items:center;justify-content:space-between;
+    flex-shrink:0;
+  }
+  .co-back-btn{background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.875rem;color:#888;display:flex;align-items:center;gap:6px;padding:8px 0;transition:color 0.2s;}
+  .co-back-btn:hover{color:#333;}
+  .co-next-btn{background:var(--red);color:white;border:none;padding:12px 32px;border-radius:8px;font-family:"DM Sans",sans-serif;font-size:0.9375rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.1s;letter-spacing:-0.01em;}
+  .co-next-btn:hover{background:var(--red-dark);}
+  .co-next-btn:active{transform:scale(0.97);}
+  .co-next-btn:disabled{background:#ddd;color:#aaa;cursor:not-allowed;transform:none;}
+
+  /* success */
+  .co-success{display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 2rem;flex:1;}
+  .co-success.show{display:flex;}
+  .co-success-icon{font-size:3.5rem;margin-bottom:1.25rem;}
+  .co-success h3{font-family:"Playfair Display",serif;font-size:1.5rem;color:var(--dark);margin-bottom:0.75rem;}
+  .co-success p{color:#888;font-weight:300;max-width:320px;line-height:1.7;}
+  .co-success-order{margin-top:1.25rem;background:#f7f7f7;border:1px solid #e5e5e5;border-radius:10px;padding:1rem 1.5rem;font-size:0.875rem;color:#444;line-height:1.7;}
+
+    @media (max-width: 700px) {
+    .co-right{display:none;}
+    .co-modal{border-radius:12px;}
+    .co-left{padding:1.25rem;}
+    .co-footer{padding:0.875rem 1.25rem;}
+    .co-row{flex-direction:column;gap:0;}
+    .express-btns{grid-template-columns:1fr 1fr;}
+  }
+
+  /* ── TIER PICKER MODAL ─────────────────────────────────── */
+  .tier-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);z-index:500;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity 0.25s;}
+  .tier-overlay.open{opacity:1;pointer-events:all;}
+  .tier-modal{background:white;border-radius:18px;width:100%;max-width:480px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.22);transform:translateY(16px) scale(0.97);transition:transform 0.3s cubic-bezier(0.34,1.2,0.64,1);}
+  .tier-overlay.open .tier-modal{transform:translateY(0) scale(1);}
+  .tier-header{background:#f9fafb;border-bottom:1.5px solid #e5e7eb;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;}
+  .tier-header h3{font-family:"Playfair Display",serif;color:var(--text);font-size:1.1rem;}
+  .tier-header p{font-size:0.775rem;color:#8B5E59;margin-top:2px;}
+  .tier-close{background:none;border:none;color:#9ca3af;font-size:1.2rem;cursor:pointer;padding:4px 8px;border-radius:6px;transition:color 0.2s;}
+  .tier-close:hover{color:var(--red);}
+  .tier-list{padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.6rem;}
+  .tier-option{display:flex;align-items:center;gap:1rem;border:1.5px solid #e5e5e5;border-radius:10px;padding:0.875rem 1.125rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s,background 0.2s;background:white;}
+  .tier-option:hover{border-color:#bbb;background:#fafafa;}
+  .tier-option.selected{border-color:var(--red);box-shadow:0 0 0 3px rgba(107,114,128,0.09);background:var(--red-light);}
+  .tier-option.popular-tier{border:2px solid var(--red);background:linear-gradient(135deg,#fff5f4,#ffe8e5);position:relative;}
+  .tier-option.popular-tier::before{content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:10px;background:linear-gradient(135deg,var(--red),#ff8a80);opacity:0.15;pointer-events:none;z-index:-1;}
+  .tier-option.best-deal-tier{border:2.5px solid #ff6b63;background:linear-gradient(135deg,#fff8f0,#ffe4d6);position:relative;box-shadow:0 4px 12px rgba(255,107,99,0.2);}
+  .tier-option.best-deal-tier::before{content:"";position:absolute;top:-2px;right:-2px;bottom:-2px;left:-2px;border-radius:10px;background:linear-gradient(135deg,#ff6b63,#ff8a80);opacity:0.08;pointer-events:none;z-index:-1;animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:0.08;}50%{opacity:0.15;}}
+  .tier-radio{width:18px;height:18px;border-radius:50%;border:2px solid #ddd;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:border-color 0.2s;}
+  .tier-option.selected .tier-radio{border-color:var(--red);}
+  .tier-option.selected .tier-radio::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);display:block;}
+  .tier-qty{font-size:1.5rem;flex-shrink:0;}
+  .tier-info{flex:1;}
+  .tier-info strong{font-size:0.9375rem;color:#111;font-weight:600;display:block;margin-bottom:2px;}
+  .tier-info span{font-size:0.775rem;color:#888;font-weight:300;display:block;}
+  .tier-badge{display:inline-block;background:transparent;color:var(--red);font-size:0.75rem;font-weight:700;padding:0;border-radius:0;margin:3px 0;text-transform:none;letter-spacing:0;}
+  .tier-savings{color:var(--red);font-weight:600;font-size:0.75rem;margin-top:2px;}
+  .tier-price{text-align:right;}
+  .tier-price .main{font-size:1.1rem;font-weight:700;color:var(--red-dark);display:block;}
+  .tier-price .per{font-size:0.725rem;color:#aaa;}
+  .tier-footer{padding:1rem 1.5rem 1.5rem;display:flex;gap:0.75rem;}
+  .tier-add-btn{flex:1;background:var(--red);color:white;border:none;padding:13px;border-radius:8px;font-family:"DM Sans",sans-serif;font-size:0.9375rem;font-weight:600;cursor:pointer;transition:background 0.2s;}
+  .tier-add-btn:hover{background:var(--red-dark);}
+  .tier-add-btn:disabled{background:#ddd;color:#aaa;cursor:not-allowed;}
+  .tier-cancel{background:none;border:1.5px solid #e5e5e5;color:#888;padding:13px 18px;border-radius:8px;font-family:"DM Sans",sans-serif;font-size:0.9375rem;cursor:pointer;transition:border-color 0.2s,color 0.2s;}
+  .tier-cancel:hover{border-color:#bbb;color:#333;}
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-32px);
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  }
+  .reveal-left.visible { opacity: 1; transform: translateX(0); }
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(32px);
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  }
+  .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+  /* staggered children */
+  .stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+  .stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0s; }
+  .stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.1s; }
+  .stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.2s; }
+  .stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.3s; }
+  .stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.4s; }
+
+  /* ── PRODUCT CARDS ── */
+  .product-card {
+    transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s cubic-bezier(0.22,1,0.36,1) !important;
+  }
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.12) !important;
+  }
+  .product-card .product-img img {
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+  }
+  .product-card:hover .product-img img {
+    transform: scale(1.07);
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary, .btn-ghost, .add-btn, .checkout-btn, .tier-add-btn {
+    transition: background 0.2s, transform 0.2s cubic-bezier(0.22,1,0.36,1), box-shadow 0.2s !important;
+  }
+  .btn-primary:hover { box-shadow: 0 8px 24px rgba(107,114,128,0.3) !important; }
+  .add-btn:hover { transform: scale(1.05) !important; box-shadow: 0 4px 16px rgba(107,114,128,0.25) !important; }
+
+  /* ── NAV ── */
+  nav {
+    transition: box-shadow 0.3s, background 0.3s;
+  }
+  nav.scrolled {
+    box-shadow: 0 2px 24px rgba(107,114,128,0.1);
+    background: rgba(255,245,244,0.98) !important;
+    backdrop-filter: blur(8px);
+  }
+  .nav-links a {
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--red-mid);
+    transition: width 0.25s cubic-bezier(0.22,1,0.36,1);
+    border-radius: 2px;
+  }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ── CARE CARDS ── */
+  .care-card {
+    transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s !important;
+  }
+  .care-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-tag {
+    transition: letter-spacing 0.3s;
+  }
+
+  /* ── PAGE LOAD ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero > * {
+    animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) both;
+  }
+  .hero > *:nth-child(2) { animation-delay: 0.1s; }
+  .hero > *:nth-child(3) { animation-delay: 0.2s; }
+  .hero > *:nth-child(4) { animation-delay: 0.3s; }
+
+  /* ── SMOOTH SECTION TRANSITIONS ── */
+  section { transition: background 0.4s; }
 
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-
 <nav>
   <div style="display:flex;align-items:center;gap:0.75rem;">
     <a class="nav-logo" href="#">
@@ -1426,7 +1466,6 @@ section { transition: background 0.4s; }
 </nav>
 
 <!-- HERO -->
-
 <section class="hero" style="padding-bottom: 2rem;">
   <div>
     <div class="hero-tag"><img src="shrimp.png" style="height:1.1em;width:auto;vertical-align:middle;margin-right:4px;" alt=""> UK's No.1 Shrimp Breeder</div>
@@ -1448,42 +1487,38 @@ section { transition: background 0.4s; }
         <div class="bubble b5"></div>
       </div>
 
-```
-  <!-- Plants -->
-  <div class="plant" style="left:14px;">
-    <svg width="40" height="90" viewBox="0 0 40 90">
-      <path d="M20 90 C20 70 12 50 18 30 C24 10 20 0 20 0" stroke="#2d7a3a" stroke-width="2" fill="none"/>
-      <ellipse cx="12" cy="38" rx="12" ry="7" fill="#2d7a3a" transform="rotate(-30 12 38)"/>
-      <ellipse cx="26" cy="24" rx="11" ry="6" fill="#3a8f46" transform="rotate(25 26 24)"/>
-      <ellipse cx="15" cy="52" rx="10" ry="6" fill="#256b30" transform="rotate(-15 15 52)"/>
-    </svg>
-  </div>
-  <div class="plant" style="right:16px;">
-    <svg width="34" height="70" viewBox="0 0 34 70">
-      <path d="M17 70 C17 55 10 40 16 22 C22 5 17 0 17 0" stroke="#3a5f1a" stroke-width="2" fill="none"/>
-      <ellipse cx="10" cy="30" rx="10" ry="6" fill="#3a5f1a" transform="rotate(-20 10 30)"/>
-      <ellipse cx="22" cy="18" rx="9" ry="5" fill="#4a7020" transform="rotate(20 22 18)"/>
-      <ellipse cx="12" cy="44" rx="9" ry="5" fill="#2e4f14" transform="rotate(-10 12 44)"/>
-    </svg>
-  </div>
+      <!-- Plants -->
+      <div class="plant" style="left:14px;">
+        <svg width="40" height="90" viewBox="0 0 40 90">
+          <path d="M20 90 C20 70 12 50 18 30 C24 10 20 0 20 0" stroke="#2d7a3a" stroke-width="2" fill="none"/>
+          <ellipse cx="12" cy="38" rx="12" ry="7" fill="#2d7a3a" transform="rotate(-30 12 38)"/>
+          <ellipse cx="26" cy="24" rx="11" ry="6" fill="#3a8f46" transform="rotate(25 26 24)"/>
+          <ellipse cx="15" cy="52" rx="10" ry="6" fill="#256b30" transform="rotate(-15 15 52)"/>
+        </svg>
+      </div>
+      <div class="plant" style="right:16px;">
+        <svg width="34" height="70" viewBox="0 0 34 70">
+          <path d="M17 70 C17 55 10 40 16 22 C22 5 17 0 17 0" stroke="#3a5f1a" stroke-width="2" fill="none"/>
+          <ellipse cx="10" cy="30" rx="10" ry="6" fill="#3a5f1a" transform="rotate(-20 10 30)"/>
+          <ellipse cx="22" cy="18" rx="9" ry="5" fill="#4a7020" transform="rotate(20 22 18)"/>
+          <ellipse cx="12" cy="44" rx="9" ry="5" fill="#2e4f14" transform="rotate(-10 12 44)"/>
+        </svg>
+      </div>
 
-  <!-- Shrimp -->
-  <div class="shrimp s1"><img src="shrimp.png" alt="shrimp"></div>
-  <div class="shrimp s2"><img src="shrimp.png" alt="shrimp"></div>
-  <div class="shrimp s3"><img src="shrimp.png" alt="shrimp"></div>
-  <div class="shrimp s4"><img src="shrimp.png" alt="shrimp"></div>
-  <div class="shrimp s5"><img src="shrimp.png" alt="shrimp"></div>
+      <!-- Shrimp -->
+      <div class="shrimp s1"><img src="shrimp.png" alt="shrimp"></div>
+      <div class="shrimp s2"><img src="shrimp.png" alt="shrimp"></div>
+      <div class="shrimp s3"><img src="shrimp.png" alt="shrimp"></div>
+      <div class="shrimp s4"><img src="shrimp.png" alt="shrimp"></div>
+      <div class="shrimp s5"><img src="shrimp.png" alt="shrimp"></div>
 
-  <div class="substrate"></div>
-  <div class="tank-label">Neocaridina davidi</div>
-</div>
-```
-
+      <div class="substrate"></div>
+      <div class="tank-label">Neocaridina davidi</div>
+    </div>
   </div>
 </section>
 
 <!-- STATS -->
-
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-number">500+</span>
@@ -1521,7 +1556,6 @@ section { transition: background 0.4s; }
 </div>
 
 <!-- SHOP -->
-
 <section id="shop" style="padding-bottom:0;">
   <div class="section-header reveal">
     <div class="section-tag">Shop</div>
@@ -1531,118 +1565,115 @@ section { transition: background 0.4s; }
 
   <div class="products-grid stagger">
 
-```
-<div class="product-card" onclick="openTier('rcs')" style="cursor:pointer;" data-product-id="mixed">
-  <div class="product-img" style="background:linear-gradient(135deg,#f9fafb,#e5e7eb);">
-    <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-    <img src="Red Cherry Shrimp Icon.png" alt="Red Cherry Shrimp" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
-  </div>
-  <div class="product-body">
-    <div class="product-name">Red Cherry Shrimp</div>
-    <div class="product-desc">Bright, healthy mixed-grade neocaridina. A brilliant all-rounder for any planted tank.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>From £2.50 <small>/ shrimp</small></div>
-      <button class="add-btn" onclick="event.stopPropagation();openTier('rcs')">→</button>
+    <div class="product-card" onclick="openTier('rcs')" style="cursor:pointer;" data-product-id="mixed">
+      <div class="product-img" style="background:linear-gradient(135deg,#f9fafb,#e5e7eb);">
+        <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
+        <img src="Red Cherry Shrimp Icon.png" alt="Red Cherry Shrimp" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+      </div>
+      <div class="product-body">
+        <div class="product-name">Red Cherry Shrimp</div>
+        <div class="product-desc">Bright, healthy mixed-grade neocaridina. A brilliant all-rounder for any planted tank.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>From £2.50 <small>/ shrimp</small></div>
+          <button class="add-btn" onclick="event.stopPropagation();openTier('rcs')">→</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card" onclick="openTier('hg')" style="cursor:pointer;" data-product-id="high">
-  <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
-    <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-    <img src="Red Cherry Shrimp Icon High.png" alt="Red Cherry Shrimp High Grade" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
-  </div>
-  <div class="product-body">
-    <div class="product-name">Red Cherry Shrimp — High Grade</div>
-    <div class="product-desc">Deep, vivid red with full body coverage. Hand-selected from the top of our colony.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>From £4.00 <small>/ shrimp</small></div>
-      <button class="add-btn" onclick="event.stopPropagation();openTier('hg')">→</button>
+    <div class="product-card" onclick="openTier('hg')" style="cursor:pointer;" data-product-id="high">
+      <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
+        <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
+        <img src="Red Cherry Shrimp Icon High.png" alt="Red Cherry Shrimp High Grade" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+      </div>
+      <div class="product-body">
+        <div class="product-name">Red Cherry Shrimp — High Grade</div>
+        <div class="product-desc">Deep, vivid red with full body coverage. Hand-selected from the top of our colony.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>From £4.00 <small>/ shrimp</small></div>
+          <button class="add-btn" onclick="event.stopPropagation();openTier('hg')">→</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card" onclick="openTier('pfr')" style="cursor:pointer;" data-product-id="painted">
-  <div class="product-img" style="background:linear-gradient(135deg,#e5e7eb,#9ca3af);">
-    <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
-    <img src="Red Cherry Shrimp Icon Painted Fire Red.png" alt="Red Cherry Shrimp Painted Fire Red" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
-  </div>
-  <div class="product-body">
-    <div class="product-name">Red Cherry Shrimp — Painted Fire Red</div>
-    <div class="product-desc">Fully opaque, fire-engine red with zero transparency. Show-quality colouration.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>From £6.00 <small>/ shrimp</small></div>
-      <button class="add-btn" onclick="event.stopPropagation();openTier('pfr')">→</button>
+    <div class="product-card" onclick="openTier('pfr')" style="cursor:pointer;" data-product-id="painted">
+      <div class="product-img" style="background:linear-gradient(135deg,#e5e7eb,#9ca3af);">
+        <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
+        <img src="Red Cherry Shrimp Icon Painted Fire Red.png" alt="Red Cherry Shrimp Painted Fire Red" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+      </div>
+      <div class="product-body">
+        <div class="product-name">Red Cherry Shrimp — Painted Fire Red</div>
+        <div class="product-desc">Fully opaque, fire-engine red with zero transparency. Show-quality colouration.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>From £6.00 <small>/ shrimp</small></div>
+          <button class="add-btn" onclick="event.stopPropagation();openTier('pfr')">→</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card" onclick="openTier('bm')" style="cursor:pointer;" data-product-id="bloody">
-  <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
-    <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
-    <img src="Red Cherry Shrimp Icon Bloody Mary.png" alt="Red Cherry Shrimp Bloody Mary" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
-  </div>
-  <div class="product-body">
-    <div class="product-name">Red Cherry Shrimp — Bloody Mary</div>
-    <div class="product-desc">The rarest and most striking variety — deep blood-red with a translucent body glow.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>From £8.00 <small>/ shrimp</small></div>
-      <button class="add-btn" onclick="event.stopPropagation();openTier('bm')">→</button>
+    <div class="product-card" onclick="openTier('bm')" style="cursor:pointer;" data-product-id="bloody">
+      <div class="product-img" style="background:linear-gradient(135deg,#f3f4f6,#d1d5db);">
+        <span class="stock-badge stock-low" data-stock-badge>Low Stock</span>
+        <img src="Red Cherry Shrimp Icon Bloody Mary.png" alt="Red Cherry Shrimp Bloody Mary" class="product-photo" onerror="this.onerror=null;this.style.display='none'">
+      </div>
+      <div class="product-body">
+        <div class="product-name">Red Cherry Shrimp — Bloody Mary</div>
+        <div class="product-desc">The rarest and most striking variety — deep blood-red with a translucent body glow.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>From £8.00 <small>/ shrimp</small></div>
+          <button class="add-btn" onclick="event.stopPropagation();openTier('bm')">→</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
-<!-- BUNDLES -->
-<div class="product-card" onclick="openTier('mystery')" style="cursor:pointer;border:2px solid var(--red);" data-product-id="bundle1">
-  <div class="product-img" style="background:linear-gradient(135deg,#fff0ee,#ffe8e5);">
-    <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
-    <img src="Mystery Box.png" alt="Mystery Box" class="product-photo" onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:3rem;\'>🎁</span>';">
-  </div>
-  <div class="product-body">
-    <div class="product-name">Mystery Box</div>
-    <div class="product-desc">Random selection of mixed-grade shrimp. Great value starter pack.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>From £2.20 <small>/ shrimp</small></div>
-      <button class="add-btn" onclick="event.stopPropagation();openTier('mystery')">→</button>
+    <!-- BUNDLES -->
+    <div class="product-card" onclick="openTier('mystery')" style="cursor:pointer;border:2px solid var(--red);" data-product-id="bundle1">
+      <div class="product-img" style="background:linear-gradient(135deg,#fff0ee,#ffe8e5);">
+        <span class="stock-badge stock-in" data-stock-badge>In Stock</span>
+        <img src="Mystery Box.png" alt="Mystery Box" class="product-photo" onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:3rem;\'>🎁</span>';">
+      </div>
+      <div class="product-body">
+        <div class="product-name">Mystery Box</div>
+        <div class="product-desc">Random selection of mixed-grade shrimp. Great value starter pack.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>From £2.20 <small>/ shrimp</small></div>
+          <button class="add-btn" onclick="event.stopPropagation();openTier('mystery')">→</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card" style="border:2px solid var(--red);" data-product-id="bundle2">
-  <div class="product-img" style="background:linear-gradient(135deg,#fff0ee,#ffe8e5);">
-    <span style="font-size:3rem;">🎁</span>
-  </div>
-  <div class="product-body">
-    <div class="product-name">Breeder's Pack</div>
-    <div class="product-desc">20x Mixed Grade + 5x High Grade + Java Moss. Accelerate your colony with higher ratios.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price><span style="text-decoration:line-through;color:#999;font-size:0.85rem;">£75.00</span> £65.00 <small>save £10</small></div>
-      <button class="add-btn" onclick="addToCart(event,'Breeders Pack','£65.00',65.00,'🎁','bundle-breeder')">+</button>
+    <div class="product-card" style="border:2px solid var(--red);" data-product-id="bundle2">
+      <div class="product-img" style="background:linear-gradient(135deg,#fff0ee,#ffe8e5);">
+        <span style="font-size:3rem;">🎁</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Breeder's Pack</div>
+        <div class="product-desc">20x Mixed Grade + 5x High Grade + Java Moss. Accelerate your colony with higher ratios.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price><span style="text-decoration:line-through;color:#999;font-size:0.85rem;">£75.00</span> £65.00 <small>save £10</small></div>
+          <button class="add-btn" onclick="addToCart(event,'Breeders Pack','£65.00',65.00,'🎁','bundle-breeder')">+</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card" data-product-id="moss">
-  <div class="product-img" style="background:#e8f0e8;">
-    🌿
-  </div>
-  <div class="product-body">
-    <div class="product-name">Java Moss Portion</div>
-    <div class="product-desc">Golf-ball sized portion of thriving java moss — essential cover for baby shrimp.</div>
-    <div class="product-footer">
-      <div class="product-price" data-price>£3.50 <small>each</small></div>
-      <button class="add-btn" onclick="addToCart(event,'Java Moss Portion','£3.50',3.50,'🌿','moss')">+</button>
+    <div class="product-card" data-product-id="moss">
+      <div class="product-img" style="background:#e8f0e8;">
+        🌿
+      </div>
+      <div class="product-body">
+        <div class="product-name">Java Moss Portion</div>
+        <div class="product-desc">Golf-ball sized portion of thriving java moss — essential cover for baby shrimp.</div>
+        <div class="product-footer">
+          <div class="product-price" data-price>£3.50 <small>each</small></div>
+          <button class="add-btn" onclick="addToCart(event,'Java Moss Portion','£3.50',3.50,'🌿','moss')">+</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-```
 
   </div>
 </section>
 
 <!-- DELIVERY BANNER -->
-
 <div class="delivery-banner" style="margin-top:-50rem !important;">
   <div class="icon">📦</div>
   <div>
@@ -1657,7 +1688,6 @@ section { transition: background 0.4s; }
 </div>
 
 <!-- CARE GUIDE -->
-
 <section id="care" class="care-section">
   <div class="section-header reveal">
     <div class="section-tag">Care Guide</div>
@@ -1706,56 +1736,51 @@ section { transition: background 0.4s; }
 </section>
 
 <!-- TANK CALCULATOR -->
-
 <!-- TANK CALCULATOR -->
-
 <section id="calculator">
   <div class="section-header reveal">
     <div class="section-tag">Tools</div>
     <h2>Tank Size Calculator</h2>
     <p>How many shrimp do you need for a thriving colony?</p>
   </div>
-
+  
   <div style="max-width:600px;margin:0 auto;background:white;border:1.5px solid #fdd5d0;border-radius:20px;padding:2.5rem;">
     <label style="display:block;font-weight:600;color:#3d2420;margin-bottom:0.5rem;">Tank Size (Litres)</label>
     <input type="number" id="tankSize" placeholder="e.g., 38" style="width:100%;padding:0.75rem;border:1.5px solid #fdd5d0;border-radius:8px;font-size:1rem;margin-bottom:1.5rem;" oninput="calculateShrimp()">
-
-```
-<div id="calcResult" style="display:none;">
-  <!-- Warning for very low stock -->
-  <div id="lowStockWarning" style="background:#fff3cd;border:2px solid #ffc107;border-radius:12px;padding:1.5rem;margin-bottom:1rem;display:none;">
-    <div style="font-weight:700;color:#856404;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;">
-      <span style="font-size:1.3rem;">⚠️</span> Colony Too Small
-    </div>
-    <p style="font-size:0.85rem;color:#856404;margin:0;line-height:1.6;">Buying just 1-5 shrimp won't give you a thriving colony. You need a proper group for breeding, natural behaviour, and genetic diversity. Small groups often fail to establish.</p>
-  </div>
-  
-  <!-- Recommended stock result -->
-  <div style="background:#fff5f4;border-radius:12px;padding:1.5rem;">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1rem;">
-      <div style="text-align:center;padding:1rem;background:white;border-radius:10px;border:1.5px solid #fdd5d0;">
-        <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:#b05a50;margin-bottom:0.25rem;">Minimum</div>
-        <div style="font-size:1.5rem;font-weight:700;color:#999;" id="minCount"></div>
-      </div>
-      <div style="text-align:center;padding:1rem;background:linear-gradient(135deg,#fff5f4,#ffe8e5);border-radius:10px;border:2px solid var(--red);">
-        <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--red);margin-bottom:0.25rem;font-weight:600;">✓ Recommended</div>
-        <div style="font-size:1.8rem;font-weight:700;color:var(--red);font-family:'Playfair Display',serif;" id="recCount"></div>
-      </div>
-    </div>
     
-    <div id="benefitsText" style="background:white;border-radius:10px;padding:1.25rem;border:1.5px solid #fdd5d0;">
-      <p style="font-size:0.875rem;color:#3d2420;margin:0 0 0.75rem;font-weight:600;">Why stock properly?</p>
-      <ul style="font-size:0.85rem;color:#4a3330;margin:0;padding-left:1.25rem;line-height:1.7;">
-        <li><strong>Faster breeding:</strong> Larger colonies establish quicker and breed more successfully</li>
-        <li><strong>Natural behaviour:</strong> Shrimp are social — they thrive in groups, not alone</li>
-        <li><strong>Genetic diversity:</strong> More shrimp = healthier offspring and better colours</li>
-        <li><strong>Visible activity:</strong> Properly stocked tanks look alive, not empty</li>
-      </ul>
+    <div id="calcResult" style="display:none;">
+      <!-- Warning for very low stock -->
+      <div id="lowStockWarning" style="background:#fff3cd;border:2px solid #ffc107;border-radius:12px;padding:1.5rem;margin-bottom:1rem;display:none;">
+        <div style="font-weight:700;color:#856404;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;">
+          <span style="font-size:1.3rem;">⚠️</span> Colony Too Small
+        </div>
+        <p style="font-size:0.85rem;color:#856404;margin:0;line-height:1.6;">Buying just 1-5 shrimp won't give you a thriving colony. You need a proper group for breeding, natural behaviour, and genetic diversity. Small groups often fail to establish.</p>
+      </div>
+      
+      <!-- Recommended stock result -->
+      <div style="background:#fff5f4;border-radius:12px;padding:1.5rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1rem;">
+          <div style="text-align:center;padding:1rem;background:white;border-radius:10px;border:1.5px solid #fdd5d0;">
+            <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:#b05a50;margin-bottom:0.25rem;">Minimum</div>
+            <div style="font-size:1.5rem;font-weight:700;color:#999;" id="minCount"></div>
+          </div>
+          <div style="text-align:center;padding:1rem;background:linear-gradient(135deg,#fff5f4,#ffe8e5);border-radius:10px;border:2px solid var(--red);">
+            <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--red);margin-bottom:0.25rem;font-weight:600;">✓ Recommended</div>
+            <div style="font-size:1.8rem;font-weight:700;color:var(--red);font-family:'Playfair Display',serif;" id="recCount"></div>
+          </div>
+        </div>
+        
+        <div id="benefitsText" style="background:white;border-radius:10px;padding:1.25rem;border:1.5px solid #fdd5d0;">
+          <p style="font-size:0.875rem;color:#3d2420;margin:0 0 0.75rem;font-weight:600;">Why stock properly?</p>
+          <ul style="font-size:0.85rem;color:#4a3330;margin:0;padding-left:1.25rem;line-height:1.7;">
+            <li><strong>Faster breeding:</strong> Larger colonies establish quicker and breed more successfully</li>
+            <li><strong>Natural behaviour:</strong> Shrimp are social — they thrive in groups, not alone</li>
+            <li><strong>Genetic diversity:</strong> More shrimp = healthier offspring and better colours</li>
+            <li><strong>Visible activity:</strong> Properly stocked tanks look alive, not empty</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-```
-
   </div>
 </section>
 
@@ -1788,15 +1813,15 @@ function calculateShrimp() {
 }
 </script>
 
-<!-- SHIPPING -->
 
+<!-- SHIPPING -->
 <section id="shipping" style="background:#fff5f4;">
   <div class="section-header reveal">
     <div class="section-tag">Shipping</div>
     <h2>How We Ship Live Animals</h2>
     <p>Proper packaging and timing to guarantee live arrival</p>
   </div>
-
+  
   <div style="max-width:850px;margin:0 auto;display:grid;gap:1.5rem;">
     <div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2rem;">
       <h3 style="font-size:1.2rem;font-weight:700;color:#3d2420;margin:0 0 1rem;">📦 Packaging</h3>
@@ -1809,26 +1834,22 @@ function calculateShrimp() {
         <li><strong>Fasted 24hrs before dispatch</strong> — reduces waste in the bag and keeps water cleaner</li>
       </ul>
     </div>
-
-```
-<div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2rem;">
-  <h3 style="font-size:1.2rem;font-weight:700;color:#3d2420;margin:0 0 1rem;">🚚 Dispatch Days</h3>
-  <p style="line-height:1.7;color:#4a3330;margin:0 0 1rem;">We <strong>only ship Monday–Thursday</strong> to avoid shrimp sitting in a depot over the weekend.</p>
-  <p style="line-height:1.7;color:#4a3330;margin:0;">Orders placed Thursday evening or later will be dispatched the following Monday. This is non-negotiable — weekend dispatch risks losing shrimp to temperature swings and delayed delivery.</p>
-</div>
-
-<div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2rem;">
-  <h3 style="font-size:1.2rem;font-weight:700;color:#3d2420;margin:0 0 1rem;">⏱️ Delivery Times</h3>
-  <p style="line-height:1.7;color:#4a3330;margin:0 0 0.75rem;"><strong>Standard:</strong> Next-day delivery via Royal Mail or courier (depending on postcode)</p>
-  <p style="line-height:1.7;color:#4a3330;margin:0;"><strong>Express:</strong> Guaranteed before 12pm next day (available at checkout for £12.99 extra)</p>
-</div>
-```
-
+    
+    <div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2rem;">
+      <h3 style="font-size:1.2rem;font-weight:700;color:#3d2420;margin:0 0 1rem;">🚚 Dispatch Days</h3>
+      <p style="line-height:1.7;color:#4a3330;margin:0 0 1rem;">We <strong>only ship Monday–Thursday</strong> to avoid shrimp sitting in a depot over the weekend.</p>
+      <p style="line-height:1.7;color:#4a3330;margin:0;">Orders placed Thursday evening or later will be dispatched the following Monday. This is non-negotiable — weekend dispatch risks losing shrimp to temperature swings and delayed delivery.</p>
+    </div>
+    
+    <div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2rem;">
+      <h3 style="font-size:1.2rem;font-weight:700;color:#3d2420;margin:0 0 1rem;">⏱️ Delivery Times</h3>
+      <p style="line-height:1.7;color:#4a3330;margin:0 0 0.75rem;"><strong>Standard:</strong> Next-day delivery via Royal Mail or courier (depending on postcode)</p>
+      <p style="line-height:1.7;color:#4a3330;margin:0;"><strong>Express:</strong> Guaranteed before 12pm next day (available at checkout for £12.99 extra)</p>
+    </div>
   </div>
 </section>
 
 <!-- REVIEWS -->
-
 <section id="reviews">
   <div class="section-header reveal">
     <div class="section-tag">Reviews</div>
@@ -1864,55 +1885,53 @@ function calculateShrimp() {
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;max-width:960px;" class="stagger">
 
-```
-<div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2.5rem;transition:background 0.2s;" onmouseover="this.style.background='#fff5f4'" onmouseout="this.style.background='white'">
-  <div style="font-size:2rem;margin-bottom:1.25rem;">🚫 <img src="shrimp.png" style="height:1em;width:auto;vertical-align:middle;" alt=""></div>
-  <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">No Returns Policy</div>
-  <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin-bottom:1rem;line-height:1.3;">We cannot accept returns on live animals</h3>
-  <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">Due to the nature of live animals, we are <strong style="color:#1a1a1a;font-weight:500;">unable to accept returns</strong> under any circumstances. This is non-negotiable and exists to protect the health of our breeding colony.</p>
-  <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">Once shrimp leave our facility and enter a new environment, they may be exposed to different water parameters, bacteria, or pathogens. Reintroducing them to our tanks would put our entire stock at risk of contamination or disease.</p>
-  <div style="background:#fff5f4;border-radius:12px;padding:1.25rem;margin-bottom:1rem;">
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;">Before you order</div>
-    <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.7;margin:0;">Please ensure your tank is fully cycled, parameters are stable, and you're ready to receive livestock. If you have any questions about compatibility, water requirements, or tank setup, <strong style="color:#1a1a1a;font-weight:500;">contact us before buying</strong> — we're happy to advise and want to make sure your shrimp thrive.</p>
-  </div>
-  <p style="font-size:0.8rem;color:#6b4a46;font-weight:400;line-height:1.6;margin:0;">By placing an order, you acknowledge and accept this no-returns policy.</p>
-</div>
-
-<div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2.5rem;transition:background 0.2s;" onmouseover="this.style.background='#fff5f4'" onmouseout="this.style.background='white'">
-  <div style="font-size:2rem;margin-bottom:1.25rem;">💚 <img src="shrimp.png" style="height:1em;width:auto;vertical-align:middle;" alt=""></div>
-  <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">Dead on Arrival Guarantee</div>
-  <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin-bottom:1rem;line-height:1.3;">Full refund if they arrive dead</h3>
-  <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">We take great care with our packaging and live delivery, but occasionally losses can occur during transit. If <strong style="color:#1a1a1a;font-weight:500;">any shrimp arrive dead</strong>, we will issue a full refund — no questions asked.</p>
-  <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1.25rem;">Your satisfaction and the wellbeing of our shrimp are our top priorities. We stand behind every shipment we send out.</p>
-  <div style="background:#fff5f4;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.5rem;margin-bottom:1rem;">
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">How to claim your refund</div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div style="display:flex;gap:0.75rem;align-items:flex-start;">
-        <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">1</span>
-        <div>
-          <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Take a clear photo</div>
-          <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Photograph the deceased shrimp <strong style="color:#1a1a1a;">still inside the sealed, unopened bag</strong>. This is essential for verification.</div>
-        </div>
+    <div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2.5rem;transition:background 0.2s;" onmouseover="this.style.background='#fff5f4'" onmouseout="this.style.background='white'">
+      <div style="font-size:2rem;margin-bottom:1.25rem;">🚫 <img src="shrimp.png" style="height:1em;width:auto;vertical-align:middle;" alt=""></div>
+      <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">No Returns Policy</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin-bottom:1rem;line-height:1.3;">We cannot accept returns on live animals</h3>
+      <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">Due to the nature of live animals, we are <strong style="color:#1a1a1a;font-weight:500;">unable to accept returns</strong> under any circumstances. This is non-negotiable and exists to protect the health of our breeding colony.</p>
+      <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">Once shrimp leave our facility and enter a new environment, they may be exposed to different water parameters, bacteria, or pathogens. Reintroducing them to our tanks would put our entire stock at risk of contamination or disease.</p>
+      <div style="background:#fff5f4;border-radius:12px;padding:1.25rem;margin-bottom:1rem;">
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;">Before you order</div>
+        <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.7;margin:0;">Please ensure your tank is fully cycled, parameters are stable, and you're ready to receive livestock. If you have any questions about compatibility, water requirements, or tank setup, <strong style="color:#1a1a1a;font-weight:500;">contact us before buying</strong> — we're happy to advise and want to make sure your shrimp thrive.</p>
       </div>
-      <div style="display:flex;gap:0.75rem;align-items:flex-start;">
-        <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">2</span>
-        <div>
-          <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Act quickly</div>
-          <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Submit your claim <strong style="color:#1a1a1a;">within 1 hour of delivery</strong>. This tight window protects both you and us.</div>
-        </div>
-      </div>
-      <div style="display:flex;gap:0.75rem;align-items:flex-start;">
-        <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">3</span>
-        <div>
-          <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Send to us</div>
-          <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Email the photo to <a href="mailto:contact@aquashrimp.co.uk" style="color:var(--red);text-decoration:none;font-weight:500;">contact@aquashrimp.co.uk</a> with your order number in the subject line.</div>
-        </div>
-      </div>
+      <p style="font-size:0.8rem;color:#6b4a46;font-weight:400;line-height:1.6;margin:0;">By placing an order, you acknowledge and accept this no-returns policy.</p>
     </div>
-  </div>
-  <p style="font-size:0.8rem;color:#6b4a46;font-weight:400;line-height:1.6;margin:0;"><strong style="color:#3d2420;font-weight:500;">Important:</strong> Claims submitted after 1 hour, or without a photo showing the shrimp inside the unopened bag, cannot be accepted. Approved refunds are processed within 3–5 business days back to your original payment method.</p>
-</div>
-```
+
+    <div style="background:white;border:1.5px solid #fdd5d0;border-radius:16px;padding:2.5rem;transition:background 0.2s;" onmouseover="this.style.background='#fff5f4'" onmouseout="this.style.background='white'">
+      <div style="font-size:2rem;margin-bottom:1.25rem;">💚 <img src="shrimp.png" style="height:1em;width:auto;vertical-align:middle;" alt=""></div>
+      <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">Dead on Arrival Guarantee</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin-bottom:1rem;line-height:1.3;">Full refund if they arrive dead</h3>
+      <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1rem;">We take great care with our packaging and live delivery, but occasionally losses can occur during transit. If <strong style="color:#1a1a1a;font-weight:500;">any shrimp arrive dead</strong>, we will issue a full refund — no questions asked.</p>
+      <p style="font-size:0.875rem;color:#3d2420;font-weight:400;line-height:1.8;margin-bottom:1.25rem;">Your satisfaction and the wellbeing of our shrimp are our top priorities. We stand behind every shipment we send out.</p>
+      <div style="background:#fff5f4;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.5rem;margin-bottom:1rem;">
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red-mid);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">How to claim your refund</div>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;gap:0.75rem;align-items:flex-start;">
+            <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">1</span>
+            <div>
+              <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Take a clear photo</div>
+              <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Photograph the deceased shrimp <strong style="color:#1a1a1a;">still inside the sealed, unopened bag</strong>. This is essential for verification.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:0.75rem;align-items:flex-start;">
+            <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">2</span>
+            <div>
+              <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Act quickly</div>
+              <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Submit your claim <strong style="color:#1a1a1a;">within 1 hour of delivery</strong>. This tight window protects both you and us.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:0.75rem;align-items:flex-start;">
+            <span style="background:var(--red);color:white;font-size:0.7rem;font-weight:600;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">3</span>
+            <div>
+              <div style="font-size:0.875rem;color:#1a1a1a;font-weight:500;line-height:1.6;margin-bottom:0.25rem;">Send to us</div>
+              <div style="font-size:0.825rem;color:#4a3330;font-weight:400;line-height:1.5;">Email the photo to <a href="mailto:contact@aquashrimp.co.uk" style="color:var(--red);text-decoration:none;font-weight:500;">contact@aquashrimp.co.uk</a> with your order number in the subject line.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:0.8rem;color:#6b4a46;font-weight:400;line-height:1.6;margin:0;"><strong style="color:#3d2420;font-weight:500;">Important:</strong> Claims submitted after 1 hour, or without a photo showing the shrimp inside the unopened bag, cannot be accepted. Approved refunds are processed within 3–5 business days back to your original payment method.</p>
+    </div>
 
   </div>
 </section>
@@ -1926,56 +1945,54 @@ function calculateShrimp() {
   </div>
 
   <div style="max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:0.75rem;">
+    
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        How many shrimp can I keep in my tank?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">5 shrimp per litre in well-maintained tanks. A 10-litre tank can comfortably hold 50 shrimp. This is the recommended amount of shrimp to have in your tank so they thrive.</p>
+    </details>
 
-```
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    How many shrimp can I keep in my tank?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">5 shrimp per litre in well-maintained tanks. A 10-litre tank can comfortably hold 50 shrimp. This is the recommended amount of shrimp to have in your tank so they thrive.</p>
-</details>
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Do I need a heater?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Red cherry shrimp thrive at 20-26°C (68-78°F). If your room stays within this range year-round, you don't need a heater. Most UK homes benefit from a small heater in winter to maintain stable temps.</p>
+    </details>
 
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    Do I need a heater?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Red cherry shrimp thrive at 20-26°C (68-78°F). If your room stays within this range year-round, you don't need a heater. Most UK homes benefit from a small heater in winter to maintain stable temps.</p>
-</details>
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Can I keep them with fish?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Avoid most fish — they'll eat baby shrimp or stress adults. Safe tank mates: otocinclus, small corydoras, or peaceful nano fish like ember tetras or chili rasboras. Shrimp-only tanks are always best for breeding.</p>
+    </details>
 
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    Can I keep them with fish?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Avoid most fish — they'll eat baby shrimp or stress adults. Safe tank mates: otocinclus, small corydoras, or peaceful nano fish like ember tetras or chili rasboras. Shrimp-only tanks are always best for breeding.</p>
-</details>
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        What water parameters do they need?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">pH: 6.5-8.0 | GH: 6-8 | KH: 2-5 | Temperature: 20-26°C. They adapt to most UK tap water. Avoid copper-based medications and ensure your tank is fully cycled (0 ammonia, 0 nitrite) before adding shrimp.</p>
+    </details>
 
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    What water parameters do they need?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">pH: 6.5-8.0 | GH: 6-8 | KH: 2-5 | Temperature: 20-26°C. They adapt to most UK tap water. Avoid copper-based medications and ensure your tank is fully cycled (0 ammonia, 0 nitrite) before adding shrimp.</p>
-</details>
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        How long do they live?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">1-2 years in good conditions. They reach breeding age at 3-4 months. A healthy colony will continuously produce new generations, so you'll always have shrimp in the tank.</p>
+    </details>
 
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    How long do they live?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">1-2 years in good conditions. They reach breeding age at 3-4 months. A healthy colony will continuously produce new generations, so you'll always have shrimp in the tank.</p>
-</details>
-
-<details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
-  <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-    Will different grades breed together?
-    <span style="color:var(--red);font-size:1.2rem;">+</span>
-  </summary>
-  <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Yes — all grades are the same species (Neocaridina davidi). Mixing grades will produce mixed-quality offspring. For best colour, keep grades separate or cull lower-quality babies.</p>
-</details>
-```
+    <details style="background:white;border:1.5px solid #fdd5d0;border-radius:12px;padding:1.25rem;cursor:pointer;">
+      <summary style="font-weight:600;color:var(--text);font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Will different grades breed together?
+        <span style="color:var(--red);font-size:1.2rem;">+</span>
+      </summary>
+      <p style="margin:1rem 0 0;font-size:0.875rem;color:#4a3330;line-height:1.7;">Yes — all grades are the same species (Neocaridina davidi). Mixing grades will produce mixed-quality offspring. For best colour, keep grades separate or cull lower-quality babies.</p>
+    </details>
 
   </div>
 </section>
@@ -1989,46 +2006,46 @@ function calculateShrimp() {
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:960px;" class="stagger">
 
-```
-<a href="tel:+447599752555" style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;color:inherit;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(107,114,128,0.12)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
-  <div style="font-size:2rem;">📞</div>
-  <div>
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Phone</div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">+44 7599 752555</div>
-    <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">Give us a call to ask about current stock, tank compatibility, or anything else before placing your order.</div>
-  </div>
-</a>
+    <a href="tel:+447599752555" style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;color:inherit;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(107,114,128,0.12)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:2rem;">📞</div>
+      <div>
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Phone</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">+44 7599 752555</div>
+        <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">Give us a call to ask about current stock, tank compatibility, or anything else before placing your order.</div>
+      </div>
+    </a>
 
-<a href="mailto:contact@aquashrimp.co.uk" style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;color:inherit;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(107,114,128,0.12)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
-  <div style="font-size:2rem;">✉️</div>
-  <div>
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Email</div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">contact@aquashrimp.co.uk</div>
-    <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">For order queries, DOA refund claims, or general shrimp questions. We aim to reply within a few hours during the week.</div>
-  </div>
-</a>
+    <a href="mailto:contact@aquashrimp.co.uk" style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;text-decoration:none;color:inherit;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(107,114,128,0.12)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:2rem;">✉️</div>
+      <div>
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Email</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">contact@aquashrimp.co.uk</div>
+        <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">For order queries, DOA refund claims, or general shrimp questions. We aim to reply within a few hours during the week.</div>
+      </div>
+    </a>
 
-<div style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;">
-  <div style="font-size:2rem;">🚚</div>
-  <div>
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Dispatch Days</div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">Monday – Thursday</div>
-    <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">We only ship live animals Mon–Thu so shrimp never sit in a depot over the weekend. Orders placed Thursday evening or later ship the following Monday.</div>
-  </div>
-</div>
+    <div style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;">
+      <div style="font-size:2rem;">🚚</div>
+      <div>
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Dispatch Days</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">Monday – Thursday</div>
+        <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">We only ship live animals Mon–Thu so shrimp never sit in a depot over the weekend. Orders placed Thursday evening or later ship the following Monday.</div>
+      </div>
+    </div>
 
-<div style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;">
-  <div style="font-size:2rem;">⏰</div>
-  <div>
-    <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Response Times</div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">Within a Few Hours</div>
-    <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">We typically respond to emails and calls within 2–4 hours during weekdays (Mon–Fri, 9am–6pm). Weekend messages are answered first thing Monday morning.</div>
-  </div>
-</div>
-```
+    <div style="display:flex;flex-direction:column;gap:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;">
+      <div style="font-size:2rem;">⏰</div>
+      <div>
+        <div style="font-size:0.7rem;font-weight:500;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;">Response Times</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#2d1a18;margin-bottom:0.5rem;">Within a Few Hours</div>
+        <div style="font-size:0.875rem;color:#4a3330;font-weight:400;line-height:1.7;">We typically respond to emails and calls within 2–4 hours during weekdays (Mon–Fri, 9am–6pm). Weekend messages are answered first thing Monday morning.</div>
+      </div>
+    </div>
 
   </div>
 </section>
+
+
 
 <footer>
   <strong>AquaShrimp</strong> &nbsp;·&nbsp; Bred with care in the UK &nbsp;·&nbsp; All livestock dispatched Mon–Thu
@@ -2036,11 +2053,9 @@ function calculateShrimp() {
 </footer>
 
 <!-- CART OVERLAY -->
-
 <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
 
 <!-- CART DRAWER -->
-
 <div class="cart-drawer" id="cartDrawer">
   <div class="cart-header">
     <h3>Your Cart</h3>
@@ -2063,133 +2078,129 @@ function calculateShrimp() {
 </div>
 
 <!-- CHECKOUT MODAL -->
-
 <div class="co-overlay" id="coOverlay">
   <div class="co-modal">
 
-```
-<!-- Top bar -->
-<div class="co-topbar">
-  <div class="co-topbar-logo"><span class="dot"></span> AquaShrimp</div>
-  <button class="co-topbar-close" onclick="closeCheckout()">✕</button>
-</div>
+    <!-- Top bar -->
+    <div class="co-topbar">
+      <div class="co-topbar-logo"><span class="dot"></span> AquaShrimp</div>
+      <button class="co-topbar-close" onclick="closeCheckout()">✕</button>
+    </div>
 
-<!-- Stepper -->
-<div class="co-stepbar">
-  <div class="co-step active" id="step-tab-1"><span class="co-step-num">1</span> Customer</div>
-  <div class="co-step" id="step-tab-2"><span class="co-step-num">2</span> Delivery</div>
-  <div class="co-step" id="step-tab-3"><span class="co-step-num">3</span> Shipping</div>
-  <div class="co-step" id="step-tab-4"><span class="co-step-num">4</span> Payment</div>
-</div>
+    <!-- Stepper -->
+    <div class="co-stepbar">
+      <div class="co-step active" id="step-tab-1"><span class="co-step-num">1</span> Customer</div>
+      <div class="co-step" id="step-tab-2"><span class="co-step-num">2</span> Delivery</div>
+      <div class="co-step" id="step-tab-3"><span class="co-step-num">3</span> Shipping</div>
+      <div class="co-step" id="step-tab-4"><span class="co-step-num">4</span> Payment</div>
+    </div>
 
-<!-- Body -->
-<div class="co-body">
+    <!-- Body -->
+    <div class="co-body">
 
-  <!-- LEFT: form -->
-  <div class="co-left">
+      <!-- LEFT: form -->
+      <div class="co-left">
 
-    <!-- Step 1: Customer -->
-    <div id="co-step-1">
-      <!-- Express checkout -->
-      <div class="express-section">
-        <div class="express-label">Express checkout</div>
-        <div class="express-btns">
-          <button class="express-btn apple" onclick="expressCheckout('apple')">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            Apple Pay
-          </button>
-          <button class="express-btn google" onclick="expressCheckout('google')">
-            <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-            Google Pay
-          </button>
-          <button class="express-btn paypal" onclick="expressCheckout('paypal')">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/></svg>
-            PayPal
-          </button>
-          <button class="express-btn later" onclick="expressCheckout('later')">
-            🌸 Pay Later
-          </button>
+        <!-- Step 1: Customer -->
+        <div id="co-step-1">
+          <!-- Express checkout -->
+          <div class="express-section">
+            <div class="express-label">Express checkout</div>
+            <div class="express-btns">
+              <button class="express-btn apple" onclick="expressCheckout('apple')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Apple Pay
+              </button>
+              <button class="express-btn google" onclick="expressCheckout('google')">
+                <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                Google Pay
+              </button>
+              <button class="express-btn paypal" onclick="expressCheckout('paypal')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/></svg>
+                PayPal
+              </button>
+              <button class="express-btn later" onclick="expressCheckout('later')">
+                🌸 Pay Later
+              </button>
+            </div>
+            <div class="express-divider"><span>or pay with card</span></div>
+          </div>
+
+          <div class="co-section-title">Customer Details</div>
+          <div class="co-field" id="f-email"><label>Email <span class="req">*</span></label><input type="email" id="co-email" placeholder="you@example.com"><div class="err-msg">Please enter a valid email address.</div></div>
+          <div class="co-row">
+            <div class="co-field" id="f-fname"><label>First name <span class="req">*</span></label><input type="text" id="co-fname" placeholder="Harvey"><div class="err-msg">Required.</div></div>
+            <div class="co-field" id="f-lname"><label>Last name <span class="req">*</span></label><input type="text" id="co-lname" placeholder="Smith"><div class="err-msg">Required.</div></div>
+          </div>
+          <div class="co-field" id="f-phone"><label>Phone <span class="req">*</span></label><input type="tel" id="co-phone" placeholder="+44 7700 000000"><div class="err-msg">Please enter a phone number.</div></div>
         </div>
-        <div class="express-divider"><span>or pay with card</span></div>
+
+        <!-- Step 2: Delivery -->
+        <div id="co-step-2" style="display:none;">
+          <div class="co-section-title">Delivery Details</div>
+          <div class="co-field" id="f-country"><label>Country / Region <span class="req">*</span></label><select id="co-country"><option value="GB" selected>🇬🇧 United Kingdom</option></select></div>
+          <div class="co-field" id="f-addr1"><label>Address <span class="req">*</span></label><input type="text" id="co-addr1" placeholder="12 Shrimp Lane"><div class="err-msg">Required.</div></div>
+          <div class="co-field"><label>Address — line 2</label><input type="text" id="co-addr2" placeholder="Flat, suite, unit (optional)"></div>
+          <div class="co-row">
+            <div class="co-field" id="f-city"><label>City <span class="req">*</span></label><input type="text" id="co-city" placeholder="Leeds"><div class="err-msg">Required.</div></div>
+            <div class="co-field" id="f-region"><label>Region <span class="req">*</span></label><input type="text" id="co-region" placeholder="West Yorkshire"><div class="err-msg">Required.</div></div>
+          </div>
+          <div class="co-field" id="f-postcode"><label>Postcode <span class="req">*</span></label><input type="text" id="co-postcode" placeholder="LS1 1AA" style="max-width:180px;"><div class="err-msg">Required.</div></div>
+        </div>
+
+        <!-- Step 3: Shipping method -->
+        <div id="co-step-3" style="display:none;">
+          <div class="co-section-title">Delivery Method</div>
+          <div class="delivery-options">
+            <div class="delivery-opt selected" onclick="selectDelivery(this,3.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Royal Mail 1st Class</strong><span>1–2 working days · Mon–Thu dispatch</span></div><div class="delivery-opt-price">£3.99</div></div>
+            <div class="delivery-opt" onclick="selectDelivery(this,5.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Royal Mail Tracked 24</strong><span>Next working day with live tracking</span></div><div class="delivery-opt-price">£5.99</div></div>
+            <div class="delivery-opt" onclick="selectDelivery(this,8.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Special Delivery Guaranteed</strong><span>By 1pm next working day — best for livestock</span></div><div class="delivery-opt-price">£8.99</div></div>
+          </div>
+        </div>
+
+        <!-- Step 4: Payment -->
+        <div id="co-step-4" style="display:none;">
+          <div class="co-section-title">Payment</div>
+          <div class="stripe-secure">🔒 Secure payment processed by Stripe — your card details are never stored on this site.</div>
+          <div class="accepted-cards">
+            <span class="ac">VISA</span><span class="ac">MASTERCARD</span><span class="ac">AMEX</span><span class="ac">APPLE PAY</span><span class="ac">GOOGLE PAY</span><span class="ac">PAYPAL</span>
+          </div>
+          <p style="font-size:0.8125rem;color:#888;font-weight:300;line-height:1.7;">Clicking <strong>Pay Now</strong> sends you to Stripe's hosted payment page. Once paid, you'll receive a confirmation email and your shrimp will be dispatched on the next available day (Mon–Thu).</p>
+        </div>
+
+        <!-- Success -->
+        <div class="co-success" id="co-success">
+          <div class="co-success-icon">🎉</div>
+          <h3>Order Placed!</h3>
+          <p>Thank you for your order. You'll get a confirmation email shortly and your shrimp will be on their way!</p>
+          <div class="co-success-order" id="co-success-detail"></div>
+        </div>
+
       </div>
 
-      <div class="co-section-title">Customer Details</div>
-      <div class="co-field" id="f-email"><label>Email <span class="req">*</span></label><input type="email" id="co-email" placeholder="you@example.com"><div class="err-msg">Please enter a valid email address.</div></div>
-      <div class="co-row">
-        <div class="co-field" id="f-fname"><label>First name <span class="req">*</span></label><input type="text" id="co-fname" placeholder="Harvey"><div class="err-msg">Required.</div></div>
-        <div class="co-field" id="f-lname"><label>Last name <span class="req">*</span></label><input type="text" id="co-lname" placeholder="Smith"><div class="err-msg">Required.</div></div>
+      <!-- RIGHT: order summary -->
+      <div class="co-right">
+        <h4>Order Summary</h4>
+        <div id="coSumItems"></div>
+        <hr class="co-sum-divider">
+        <div class="co-sum-row"><span>Subtotal</span><span id="coSumSubtotal">£0.00</span></div>
+        <div class="co-sum-row" id="coSumShippingRow" style="display:none;"><span>Shipping</span><span id="coSumShipping">£0.00</span></div>
+        <div class="co-sum-row total"><span>Total</span><span id="coSumTotal">£0.00</span></div>
+        <p class="co-sum-shipping-note">🇬🇧 UK delivery only · dispatched Mon–Thu<br>🦐 Live arrival guaranteed</p>
       </div>
-      <div class="co-field" id="f-phone"><label>Phone <span class="req">*</span></label><input type="tel" id="co-phone" placeholder="+44 7700 000000"><div class="err-msg">Please enter a phone number.</div></div>
+
     </div>
 
-    <!-- Step 2: Delivery -->
-    <div id="co-step-2" style="display:none;">
-      <div class="co-section-title">Delivery Details</div>
-      <div class="co-field" id="f-country"><label>Country / Region <span class="req">*</span></label><select id="co-country"><option value="GB" selected>🇬🇧 United Kingdom</option></select></div>
-      <div class="co-field" id="f-addr1"><label>Address <span class="req">*</span></label><input type="text" id="co-addr1" placeholder="12 Shrimp Lane"><div class="err-msg">Required.</div></div>
-      <div class="co-field"><label>Address — line 2</label><input type="text" id="co-addr2" placeholder="Flat, suite, unit (optional)"></div>
-      <div class="co-row">
-        <div class="co-field" id="f-city"><label>City <span class="req">*</span></label><input type="text" id="co-city" placeholder="Leeds"><div class="err-msg">Required.</div></div>
-        <div class="co-field" id="f-region"><label>Region <span class="req">*</span></label><input type="text" id="co-region" placeholder="West Yorkshire"><div class="err-msg">Required.</div></div>
-      </div>
-      <div class="co-field" id="f-postcode"><label>Postcode <span class="req">*</span></label><input type="text" id="co-postcode" placeholder="LS1 1AA" style="max-width:180px;"><div class="err-msg">Required.</div></div>
+    <!-- Footer -->
+    <div class="co-form-footer" id="co-form-footer">
+      <button class="co-back-btn" id="coBackBtn" onclick="coBack()" style="visibility:hidden;">← Back</button>
+      <button class="co-next-btn" id="coNextBtn" onclick="coNext()">Continue →</button>
     </div>
-
-    <!-- Step 3: Shipping method -->
-    <div id="co-step-3" style="display:none;">
-      <div class="co-section-title">Delivery Method</div>
-      <div class="delivery-options">
-        <div class="delivery-opt selected" onclick="selectDelivery(this,3.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Royal Mail 1st Class</strong><span>1–2 working days · Mon–Thu dispatch</span></div><div class="delivery-opt-price">£3.99</div></div>
-        <div class="delivery-opt" onclick="selectDelivery(this,5.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Royal Mail Tracked 24</strong><span>Next working day with live tracking</span></div><div class="delivery-opt-price">£5.99</div></div>
-        <div class="delivery-opt" onclick="selectDelivery(this,8.99)"><div class="delivery-opt-radio"></div><div class="delivery-opt-info"><strong>Special Delivery Guaranteed</strong><span>By 1pm next working day — best for livestock</span></div><div class="delivery-opt-price">£8.99</div></div>
-      </div>
-    </div>
-
-    <!-- Step 4: Payment -->
-    <div id="co-step-4" style="display:none;">
-      <div class="co-section-title">Payment</div>
-      <div class="stripe-secure">🔒 Secure payment processed by Stripe — your card details are never stored on this site.</div>
-      <div class="accepted-cards">
-        <span class="ac">VISA</span><span class="ac">MASTERCARD</span><span class="ac">AMEX</span><span class="ac">APPLE PAY</span><span class="ac">GOOGLE PAY</span><span class="ac">PAYPAL</span>
-      </div>
-      <p style="font-size:0.8125rem;color:#888;font-weight:300;line-height:1.7;">Clicking <strong>Pay Now</strong> sends you to Stripe's hosted payment page. Once paid, you'll receive a confirmation email and your shrimp will be dispatched on the next available day (Mon–Thu).</p>
-    </div>
-
-    <!-- Success -->
-    <div class="co-success" id="co-success">
-      <div class="co-success-icon">🎉</div>
-      <h3>Order Placed!</h3>
-      <p>Thank you for your order. You'll get a confirmation email shortly and your shrimp will be on their way!</p>
-      <div class="co-success-order" id="co-success-detail"></div>
-    </div>
-
-  </div>
-
-  <!-- RIGHT: order summary -->
-  <div class="co-right">
-    <h4>Order Summary</h4>
-    <div id="coSumItems"></div>
-    <hr class="co-sum-divider">
-    <div class="co-sum-row"><span>Subtotal</span><span id="coSumSubtotal">£0.00</span></div>
-    <div class="co-sum-row" id="coSumShippingRow" style="display:none;"><span>Shipping</span><span id="coSumShipping">£0.00</span></div>
-    <div class="co-sum-row total"><span>Total</span><span id="coSumTotal">£0.00</span></div>
-    <p class="co-sum-shipping-note">🇬🇧 UK delivery only · dispatched Mon–Thu<br>🦐 Live arrival guaranteed</p>
-  </div>
-
-</div>
-
-<!-- Footer -->
-<div class="co-form-footer" id="co-form-footer">
-  <button class="co-back-btn" id="coBackBtn" onclick="coBack()" style="visibility:hidden;">← Back</button>
-  <button class="co-next-btn" id="coNextBtn" onclick="coNext()">Continue →</button>
-</div>
-```
 
   </div>
 </div>
 
 <!-- TOAST -->
-
 <div class="toast" id="toast"></div>
 
 <script>
@@ -2685,9 +2696,7 @@ function calculateShrimp() {
 
   // ─────────────────────────────────────────────────────────────────────────
 </script>
-
 <!-- Stripe.js — loads Stripe's secure payment library -->
-
 <script>
   // ═══════════════════════════════════════════════════════════════════════════
   // FIREBASE CONFIGURATION - Define early so all code can access it
@@ -4258,11 +4267,8 @@ function calculateShrimp() {
 </script>
 
 <!-- Firebase SDK -->
-
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
 
 <script>
@@ -4326,8 +4332,8 @@ function calculateShrimp() {
 
 <!-- USER ACCOUNT SYSTEM -->
 
-<!-- ACCOUNT MENU DROPDOWN -->
 
+<!-- ACCOUNT MENU DROPDOWN -->
 <div id="accountMenu" style="display:none;position:fixed;top:70px;right:20px;background:white;border:1.5px solid #ddd;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;min-width:200px;">
   <div style="padding:1rem;border-bottom:1px solid #f0f0f0;">
     <div style="font-weight:600;color:var(--text);" id="accountMenuEmail">user@example.com</div>
@@ -4346,17 +4352,13 @@ function calculateShrimp() {
 </div>
 
 <!-- OUT OF STOCK MODAL -->
-
 <div id="outOfStockModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:420px;width:90%;text-align:center;animation:slideUp 0.3s ease-out;">
     <div style="font-size:4rem;margin-bottom:1rem;">📦</div>
     <h3 style="margin:0 0 0.5rem;color:var(--text);font-family:'Playfair Display',serif;font-size:1.5rem;">Out of Stock</h3>
     <p style="font-size:0.95rem;color:#666;margin:0 0 2rem;line-height:1.6;">Sorry, this product is currently unavailable. We'll have more shrimp soon!</p>
-
-```
-<button onclick="closeOutOfStockModal()" style="width:100%;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">Got it</button>
-```
-
+    
+    <button onclick="closeOutOfStockModal()" style="width:100%;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">Got it</button>
   </div>
 </div>
 
@@ -4374,187 +4376,166 @@ function calculateShrimp() {
 </style>
 
 <!-- LOGIN MODAL -->
-
 <div id="loginModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:420px;width:90%;">
     <h3 style="margin:0 0 0.5rem;color:var(--text);font-family:'Playfair Display',serif;">Welcome Back</h3>
     <p style="font-size:0.875rem;color:#666;margin:0 0 1.5rem;">Sign in to track your orders and save your details</p>
-
-```
-<!-- Google Sign-In Button -->
-<button onclick="signInWithGoogle()" style="width:100%;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:1rem;">
-  <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707 0-.593.102-1.17.282-1.709V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.335z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
-  Continue with Google
-</button>
-
-<div style="text-align:center;color:#999;font-size:0.875rem;margin:1rem 0;position:relative;">
-  <span style="background:white;padding:0 0.75rem;position:relative;z-index:1;">or</span>
-  <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:#e0e0e0;z-index:0;"></div>
-</div>
-
-<input type="email" id="loginEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-<input type="password" id="loginPassword" placeholder="Password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') userLogin()">
-
-<div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
-  <button onclick="closeLoginModal()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
-  <button onclick="userLogin()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Sign In</button>
-</div>
-
-<div style="text-align:center;margin-bottom:0.5rem;">
-  <a href="#" onclick="event.preventDefault();openForgotPassword();closeLoginModal();" style="color:var(--red);font-size:0.875rem;text-decoration:none;">Forgot password?</a>
-</div>
-
-<p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
-  Don't have an account? <a href="#" onclick="event.preventDefault();openSignupModal();closeLoginModal();" style="color:var(--red);font-weight:600;">Sign up</a>
-</p>
-
-<p id="loginError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;">Invalid email or password</p>
-```
-
+    
+    <!-- Google Sign-In Button -->
+    <button onclick="signInWithGoogle()" style="width:100%;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:1rem;">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707 0-.593.102-1.17.282-1.709V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.335z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
+      Continue with Google
+    </button>
+    
+    <div style="text-align:center;color:#999;font-size:0.875rem;margin:1rem 0;position:relative;">
+      <span style="background:white;padding:0 0.75rem;position:relative;z-index:1;">or</span>
+      <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:#e0e0e0;z-index:0;"></div>
+    </div>
+    
+    <input type="email" id="loginEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+    <input type="password" id="loginPassword" placeholder="Password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') userLogin()">
+    
+    <div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
+      <button onclick="closeLoginModal()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
+      <button onclick="userLogin()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Sign In</button>
+    </div>
+    
+    <div style="text-align:center;margin-bottom:0.5rem;">
+      <a href="#" onclick="event.preventDefault();openForgotPassword();closeLoginModal();" style="color:var(--red);font-size:0.875rem;text-decoration:none;">Forgot password?</a>
+    </div>
+    
+    <p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
+      Don't have an account? <a href="#" onclick="event.preventDefault();openSignupModal();closeLoginModal();" style="color:var(--red);font-weight:600;">Sign up</a>
+    </p>
+    
+    <p id="loginError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;">Invalid email or password</p>
   </div>
 </div>
 
 <!-- SIGNUP MODAL -->
-
 <div id="signupModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:420px;width:90%;">
     <h3 style="margin:0 0 0.5rem;color:var(--text);font-family:'Playfair Display',serif;">Create Account</h3>
     <p style="font-size:0.875rem;color:#666;margin:0 0 1.5rem;">Track your orders and save your details for faster checkout</p>
-
-```
-<!-- Google Sign-In Button -->
-<button onclick="signInWithGoogle();closeSignupModal();" style="width:100%;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:1rem;">
-  <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707 0-.593.102-1.17.282-1.709V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.335z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
-  Continue with Google
-</button>
-
-<div style="text-align:center;color:#999;font-size:0.875rem;margin:1rem 0;position:relative;">
-  <span style="background:white;padding:0 0.75rem;position:relative;z-index:1;">or</span>
-  <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:#e0e0e0;z-index:0;"></div>
-</div>
-
-<input type="text" id="signupName" placeholder="Full name" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-<input type="email" id="signupEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-<input type="password" id="signupPassword" placeholder="Password (min 6 characters)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-<input type="tel" id="signupPhone" placeholder="Phone number (optional - for account recovery)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') userSignup()">
-
-<div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
-  <button onclick="closeSignupModal()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
-  <button onclick="userSignup()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Create Account</button>
-</div>
-
-<p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
-  Already have an account? <a href="#" onclick="event.preventDefault();openLoginModal();closeSignupModal();" style="color:var(--red);font-weight:600;">Sign in</a>
-</p>
-
-<p id="signupError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
-```
-
+    
+    <!-- Google Sign-In Button -->
+    <button onclick="signInWithGoogle();closeSignupModal();" style="width:100%;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:1rem;">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707 0-.593.102-1.17.282-1.709V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.335z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
+      Continue with Google
+    </button>
+    
+    <div style="text-align:center;color:#999;font-size:0.875rem;margin:1rem 0;position:relative;">
+      <span style="background:white;padding:0 0.75rem;position:relative;z-index:1;">or</span>
+      <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:#e0e0e0;z-index:0;"></div>
+    </div>
+    
+    <input type="text" id="signupName" placeholder="Full name" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+    <input type="email" id="signupEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+    <input type="password" id="signupPassword" placeholder="Password (min 6 characters)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+    <input type="tel" id="signupPhone" placeholder="Phone number (optional - for account recovery)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') userSignup()">
+    
+    <div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
+      <button onclick="closeSignupModal()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
+      <button onclick="userSignup()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Create Account</button>
+    </div>
+    
+    <p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
+      Already have an account? <a href="#" onclick="event.preventDefault();openLoginModal();closeSignupModal();" style="color:var(--red);font-weight:600;">Sign in</a>
+    </p>
+    
+    <p id="signupError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
   </div>
 </div>
 
 <!-- FORGOT PASSWORD MODAL -->
-
 <div id="forgotPasswordModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:420px;width:90%;">
     <h3 style="margin:0 0 0.5rem;color:var(--text);font-family:'Playfair Display',serif;">Reset Password</h3>
     <p style="font-size:0.875rem;color:#666;margin:0 0 1.5rem;">Enter your email address and we'll send you a link to reset your password</p>
-
-```
-<input type="email" id="resetEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') sendPasswordReset()">
-
-<div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
-  <button onclick="closeForgotPassword()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
-  <button onclick="sendPasswordReset()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Send Reset Link</button>
-</div>
-
-<p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
-  Remember your password? <a href="#" onclick="event.preventDefault();openLoginModal();closeForgotPassword();" style="color:var(--red);font-weight:600;">Sign in</a>
-</p>
-
-<p id="resetError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
-<p id="resetSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
-```
-
+    
+    <input type="email" id="resetEmail" placeholder="Email address" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;" onkeypress="if(event.key==='Enter') sendPasswordReset()">
+    
+    <div style="display:flex;gap:0.75rem;margin-bottom:1rem;">
+      <button onclick="closeForgotPassword()" style="flex:1;padding:0.875rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Cancel</button>
+      <button onclick="sendPasswordReset()" style="flex:1;padding:0.875rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Send Reset Link</button>
+    </div>
+    
+    <p style="text-align:center;font-size:0.875rem;color:#666;margin:0;">
+      Remember your password? <a href="#" onclick="event.preventDefault();openLoginModal();closeForgotPassword();" style="color:var(--red);font-weight:600;">Sign in</a>
+    </p>
+    
+    <p id="resetError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
+    <p id="resetSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
   </div>
 </div>
 
 <!-- MY ORDERS MODAL -->
-
 <div id="myOrdersModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;overflow-y:auto;padding:2rem 0;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:900px;width:90%;max-height:90vh;overflow-y:auto;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
       <h3 style="margin:0;color:var(--text);font-family:'Playfair Display',serif;">My Orders</h3>
       <button onclick="closeMyOrders()" style="background:#f0f0f0;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.2rem;">✕</button>
     </div>
-
-```
-<div id="ordersList"></div>
-```
-
+    
+    <div id="ordersList"></div>
   </div>
 </div>
 
 <!-- ACCOUNT SETTINGS MODAL -->
-
 <div id="accountSettingsModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;overflow-y:auto;padding:2rem 0;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:600px;width:90%;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
       <h3 style="margin:0;color:var(--text);font-family:'Playfair Display',serif;">Account Settings</h3>
       <button onclick="closeAccountSettings()" style="background:#f0f0f0;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.2rem;">✕</button>
     </div>
-
-```
-<!-- Email Verification Section -->
-<div id="emailVerificationSection" style="background:#fff3cd;border:1.5px solid #ffc107;border-radius:12px;padding:1.5rem;margin-bottom:2rem;display:none;">
-  <div style="font-weight:600;color:#856404;margin-bottom:0.5rem;">⚠️ Email Not Verified</div>
-  <p style="font-size:0.9rem;color:#856404;margin:0 0 1rem;">Please verify your email address to change your password and access all features.</p>
-  <button onclick="sendVerificationEmail()" style="padding:0.75rem 1.5rem;border:none;background:#ffc107;color:#333;border-radius:8px;font-weight:600;cursor:pointer;">Send Verification Email</button>
-  <p id="verificationSent" style="font-size:0.85rem;color:#28a745;margin:0.75rem 0 0;display:none;">✓ Verification email sent! Check your inbox.</p>
-</div>
-
-<!-- Phone Number Section -->
-<div style="margin-bottom:2rem;">
-  <h4 style="margin:0 0 1rem;color:var(--text);">Phone Number</h4>
-  <p style="font-size:0.875rem;color:#666;margin:0 0 1rem;">Add or update your phone number for account recovery</p>
-  
-  <div style="display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:end;">
-    <div>
-      <input type="tel" id="accountPhone" placeholder="Enter phone number" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;">
+    
+    <!-- Email Verification Section -->
+    <div id="emailVerificationSection" style="background:#fff3cd;border:1.5px solid #ffc107;border-radius:12px;padding:1.5rem;margin-bottom:2rem;display:none;">
+      <div style="font-weight:600;color:#856404;margin-bottom:0.5rem;">⚠️ Email Not Verified</div>
+      <p style="font-size:0.9rem;color:#856404;margin:0 0 1rem;">Please verify your email address to change your password and access all features.</p>
+      <button onclick="sendVerificationEmail()" style="padding:0.75rem 1.5rem;border:none;background:#ffc107;color:#333;border-radius:8px;font-weight:600;cursor:pointer;">Send Verification Email</button>
+      <p id="verificationSent" style="font-size:0.85rem;color:#28a745;margin:0.75rem 0 0;display:none;">✓ Verification email sent! Check your inbox.</p>
     </div>
-    <button onclick="updatePhoneNumber()" style="padding:0.875rem 1.5rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Update</button>
-  </div>
-  
-  <p id="phoneUpdateSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;">✓ Phone number updated!</p>
-  <p id="phoneUpdateError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;"></p>
-</div>
-
-<!-- Change Password Section -->
-<div id="changePasswordSection">
-  <h4 style="margin:0 0 1rem;color:var(--text);">Change Password</h4>
-  
-  <div id="passwordChangeDisabled" style="background:#f8f9fa;border:1.5px solid #dee2e6;border-radius:12px;padding:1.5rem;margin-bottom:1rem;display:none;">
-    <p style="font-size:0.9rem;color:#6c757d;margin:0;">🔒 Verify your email address first to change your password.</p>
-  </div>
-  
-  <div id="passwordChangeForm">
-    <input type="password" id="currentPassword" placeholder="Current password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-    <input type="password" id="newPassword" placeholder="New password (min 6 characters)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
-    <input type="password" id="confirmPassword" placeholder="Confirm new password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
     
-    <button onclick="changePassword()" style="width:100%;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">Update Password</button>
+    <!-- Phone Number Section -->
+    <div style="margin-bottom:2rem;">
+      <h4 style="margin:0 0 1rem;color:var(--text);">Phone Number</h4>
+      <p style="font-size:0.875rem;color:#666;margin:0 0 1rem;">Add or update your phone number for account recovery</p>
+      
+      <div style="display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:end;">
+        <div>
+          <input type="tel" id="accountPhone" placeholder="Enter phone number" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;">
+        </div>
+        <button onclick="updatePhoneNumber()" style="padding:0.875rem 1.5rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;">Update</button>
+      </div>
+      
+      <p id="phoneUpdateSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;">✓ Phone number updated!</p>
+      <p id="phoneUpdateError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;"></p>
+    </div>
     
-    <p id="passwordChangeError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
-    <p id="passwordChangeSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
-  </div>
-</div>
-```
-
+    <!-- Change Password Section -->
+    <div id="changePasswordSection">
+      <h4 style="margin:0 0 1rem;color:var(--text);">Change Password</h4>
+      
+      <div id="passwordChangeDisabled" style="background:#f8f9fa;border:1.5px solid #dee2e6;border-radius:12px;padding:1.5rem;margin-bottom:1rem;display:none;">
+        <p style="font-size:0.9rem;color:#6c757d;margin:0;">🔒 Verify your email address first to change your password.</p>
+      </div>
+      
+      <div id="passwordChangeForm">
+        <input type="password" id="currentPassword" placeholder="Current password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+        <input type="password" id="newPassword" placeholder="New password (min 6 characters)" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+        <input type="password" id="confirmPassword" placeholder="Confirm new password" style="width:100%;padding:0.875rem;border:1.5px solid #fdd5d0;border-radius:10px;font-size:1rem;margin-bottom:1rem;">
+        
+        <button onclick="changePassword()" style="width:100%;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">Update Password</button>
+        
+        <p id="passwordChangeError" style="color:#dc3545;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
+        <p id="passwordChangeSuccess" style="color:#28a745;font-size:0.85rem;margin:0.75rem 0 0;display:none;text-align:center;"></p>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- ADMIN LOGIN MODAL -->
-
 <div id="adminLoginModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:400px;width:90%;">
     <h3 style="margin:0 0 0.5rem;color:var(--text);font-family:'Playfair Display',serif;">Admin Login</h3>
@@ -4569,37 +4550,33 @@ function calculateShrimp() {
 </div>
 
 <!-- ADMIN PANEL MODAL -->
-
 <div id="adminPanel" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;overflow-y:auto;padding:2rem 0;">
   <div style="background:white;border-radius:16px;padding:2.5rem;max-width:1000px;width:90%;max-height:90vh;overflow-y:auto;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
       <h3 style="margin:0;color:var(--text);font-family:'Playfair Display',serif;">Admin Panel</h3>
       <button onclick="closeAdminPanel()" style="background:#f0f0f0;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.2rem;">✕</button>
     </div>
-
-```
-<!-- Tabs -->
-<div style="display:flex;gap:1rem;margin-bottom:2rem;border-bottom:2px solid #f0f0f0;">
-  <button id="adminTabProducts" onclick="switchAdminTab('products')" style="padding:0.75rem 1.5rem;border:none;background:transparent;cursor:pointer;font-weight:600;color:var(--red);border-bottom:3px solid var(--red);">Products</button>
-  <button id="adminTabOrders" onclick="switchAdminTab('orders')" style="padding:0.75rem 1.5rem;border:none;background:transparent;cursor:pointer;font-weight:600;color:#999;border-bottom:3px solid transparent;">Orders</button>
-</div>
-
-<!-- Products Tab -->
-<div id="adminProductsTab">
-  <div id="productList"></div>
-  
-  <div style="margin-top:2rem;padding-top:2rem;border-top:2px solid #f0f0f0;display:flex;gap:1rem;">
-    <button onclick="saveProducts()" style="flex:1;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">💾 Save Product Changes</button>
-    <button onclick="adminLogout()" style="padding:1rem 2rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Logout</button>
-  </div>
-</div>
-
-<!-- Orders Tab -->
-<div id="adminOrdersTab" style="display:none;">
-  <div id="adminOrdersList"></div>
-</div>
-```
-
+    
+    <!-- Tabs -->
+    <div style="display:flex;gap:1rem;margin-bottom:2rem;border-bottom:2px solid #f0f0f0;">
+      <button id="adminTabProducts" onclick="switchAdminTab('products')" style="padding:0.75rem 1.5rem;border:none;background:transparent;cursor:pointer;font-weight:600;color:var(--red);border-bottom:3px solid var(--red);">Products</button>
+      <button id="adminTabOrders" onclick="switchAdminTab('orders')" style="padding:0.75rem 1.5rem;border:none;background:transparent;cursor:pointer;font-weight:600;color:#999;border-bottom:3px solid transparent;">Orders</button>
+    </div>
+    
+    <!-- Products Tab -->
+    <div id="adminProductsTab">
+      <div id="productList"></div>
+      
+      <div style="margin-top:2rem;padding-top:2rem;border-top:2px solid #f0f0f0;display:flex;gap:1rem;">
+        <button onclick="saveProducts()" style="flex:1;padding:1rem;border:none;background:var(--red);color:white;border-radius:10px;font-weight:600;cursor:pointer;font-size:1rem;">💾 Save Product Changes</button>
+        <button onclick="adminLogout()" style="padding:1rem 2rem;border:1.5px solid #ddd;background:white;border-radius:10px;font-weight:600;cursor:pointer;">Logout</button>
+      </div>
+    </div>
+    
+    <!-- Orders Tab -->
+    <div id="adminOrdersTab" style="display:none;">
+      <div id="adminOrdersList"></div>
+    </div>
   </div>
 </div>
 
