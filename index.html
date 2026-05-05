@@ -924,30 +924,34 @@
   
   /* MOBILE */
   @media (max-width: 768px) {
+    html {
+      font-size: 18px; /* Base font larger for more zoom */
+    }
+    
     html, body {
       overflow-x: hidden;
       width: 100%;
     }
     
     nav { 
-      padding: 0 1rem;
+      padding: 0 0.75rem;
       max-width: 100%;
     }
     .nav-links { display: none; }
     
     section {
-      padding: 2rem 1rem;
+      padding: 1.5rem 0.75rem;
     }
     
     .delivery-banner { 
-      margin: 2rem 0 2rem;
+      margin: 1.5rem 0.75rem;
       padding: 1.25rem;
       border-radius: 10px;
     }
     
-    /* Make logo smaller on mobile */
+    /* Make logo BIGGER on mobile for better visibility */
     .nav-logo {
-      font-size: 1.1rem !important;
+      font-size: 1.4rem !important;
     }
     
     /* Reduce gap between buttons */
@@ -955,56 +959,63 @@
       gap: 0.3rem !important;
     }
     
-    /* Make cart and account buttons even smaller on mobile */
+    /* Make cart and account buttons appropriately sized on mobile */
     .nav-cart {
-      padding: 4px 10px !important;
-      font-size: 0.7rem !important;
-      gap: 3px !important;
-      border-radius: 18px !important;
+      padding: 0.5rem 0.9rem !important;
+      font-size: 0.8rem !important;
+      gap: 4px !important;
+      border-radius: 20px !important;
     }
     
     #accountBtn {
-      padding: 4px 10px !important;
-      font-size: 0.7rem !important;
+      padding: 0.5rem 0.9rem !important;
+      font-size: 0.8rem !important;
       border-radius: 6px !important;
     }
     
     .cart-badge {
-      width: 16px !important;
-      height: 16px !important;
-      font-size: 0.65rem !important;
-      line-height: 16px !important;
+      width: 18px !important;
+      height: 18px !important;
+      font-size: 0.7rem !important;
+      line-height: 18px !important;
     }
 
     .hero {
-      padding: 2rem 1.25rem 1.5rem;
+      padding: 2rem 0.75rem 1.5rem;
       grid-template-columns: 1fr;
       gap: 0;
     }
     .hero-visual { display: none; }
-    .hero h1 { font-size: 2rem; margin-bottom: 0.75rem; }
-    .hero p { font-size: 0.9rem; margin-bottom: 1.25rem; }
-    .hero-tag { font-size: 0.7rem; margin-bottom: 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.75rem; line-height: 1.1; }
+    .hero p { font-size: 1.05rem; margin-bottom: 1.25rem; }
+    .hero-tag { font-size: 0.8rem; margin-bottom: 1rem; padding: 0.5rem 1rem; }
     .hero-btns { gap: 0.75rem; }
+    .hero-btns .btn-primary,
+    .hero-btns .btn-ghost {
+      font-size: 1rem;
+      padding: 0.85rem 1.5rem;
+    }
 
     .section-header { margin-bottom: 1rem; }
-    .section-header h2 { font-size: 1.5rem; }
+    .section-header h2 { font-size: 1.8rem; }
+    .section-tag { font-size: 0.75rem; }
 
     .stats-bar {
-      padding: 0.75rem 1rem;
+      padding: 1rem 0.75rem;
       gap: 0.75rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 100%;
     }
-    .stat-number { font-size: 1.3rem; }
+    .stat-number { font-size: 1.6rem; }
+    .stat-label { font-size: 0.75rem; }
 
     .products-grid { 
       gap: 1rem;
       grid-template-columns: 1fr;
-      max-width: min(380px, 100%);
-      margin: 0 auto;
-      padding: 0;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 0.75rem;
     }
     .product-card { 
       border-radius: 10px; 
@@ -1013,10 +1024,19 @@
     .product-img {
       width: 100%;
       min-width: 100%;
-      height: 240px;
+      height: 280px;
     }
     .product-body {
-      padding: 1.25rem;
+      padding: 1.5rem;
+    }
+    .product-title {
+      font-size: 1.3rem;
+    }
+    .product-desc {
+      font-size: 0.95rem;
+    }
+    .product-price {
+      font-size: 1.4rem;
     }
 
     /* care grid — 2 columns, no gap overflow */
