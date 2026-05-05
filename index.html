@@ -32,7 +32,11 @@
     --shadow: 0 2px 20px rgba(255,107,99,0.08);
   }
 
-  html { scroll-behavior: smooth; }
+  html { 
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+    width: 100%;
+  }
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -40,6 +44,8 @@
     color: var(--text);
     font-size: 16px;
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   /* NAV */
@@ -858,26 +864,74 @@
 
   /* RESPONSIVE */
   @media (max-width: 768px) {
+    /* AGGRESSIVE SPACING FIX - FORCE EVERYTHING COMPACT */
+    * {
+      min-height: 0 !important;
+    }
+    
     nav { padding: 0 1.25rem; }
     .nav-links { display: none; }
     
-    /* Make cart and account buttons smaller on mobile */
+    /* Prevent horizontal scroll */
+    section {
+      max-width: 100%;
+      overflow-x: hidden;
+      padding: 1rem 1rem !important;
+      margin: 0 !important;
+    }
+    
+    /* Remove all excessive spacing */
+    .care-section {
+      padding-top: 0rem !important;
+      margin-top: 0rem !important;
+    }
+    
+    #shop {
+      padding-bottom: 0rem !important;
+      margin-bottom: 0rem !important;
+    }
+    
+    .delivery-banner { 
+      margin: 0 1rem 0.5rem !important;
+      padding: 1rem !important;
+    }
+    
+    .products-grid,
+    .care-grid,
+    .contact-cards,
+    .stats-bar {
+      max-width: 100%;
+    }
+    
+    /* Make logo smaller on mobile */
+    .nav-logo {
+      font-size: 1.1rem !important;
+    }
+    
+    /* Reduce gap between buttons */
+    nav > div:last-child {
+      gap: 0.3rem !important;
+    }
+    
+    /* Make cart and account buttons smaller on mobile (but not too small) */
     .nav-cart {
-      padding: 6px 12px;
-      font-size: 0.75rem;
-      gap: 4px;
+      padding: 6px 12px !important;
+      font-size: 0.75rem !important;
+      gap: 4px !important;
+      border-radius: 20px !important;
     }
     
     #accountBtn {
       padding: 6px 12px !important;
       font-size: 0.75rem !important;
+      border-radius: 6px !important;
     }
     
     .cart-badge {
-      width: 18px;
-      height: 18px;
-      font-size: 0.7rem;
-      line-height: 18px;
+      width: 17px !important;
+      height: 17px !important;
+      font-size: 0.68rem !important;
+      line-height: 17px !important;
     }
 
     .hero {
@@ -891,9 +945,6 @@
     .hero-tag { font-size: 0.7rem; margin-bottom: 1rem; }
     .hero-btns { gap: 0.75rem; }
 
-    section {
-      padding: 1.5rem 1rem;
-    }
     .section-header { margin-bottom: 1rem; }
     .section-header h2 { font-size: 1.5rem; }
 
@@ -905,9 +956,14 @@
     }
     .stat-number { font-size: 1.3rem; }
 
-    .delivery-banner { margin: 0 1rem 1rem; }
-
-    .products-grid { gap: 0.75rem; }
+    .products-grid { 
+      gap: 0.75rem;
+      grid-template-columns: 1fr;
+      max-width: 380px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      margin-bottom: 0 !important;
+    }
     .product-card { 
       border-radius: 10px; 
       flex-direction: column;
@@ -915,10 +971,10 @@
     .product-img {
       width: 100%;
       min-width: 100%;
-      height: 260px;
+      height: 240px;
     }
     .product-body {
-      padding: 1.5rem;
+      padding: 1.25rem;
     }
 
     /* care grid — 2 columns, no gap overflow */
@@ -935,6 +991,33 @@
     .care-value { font-size: 0.8rem; }
 
     .cart-drawer { width: 100%; }
+    
+    /* Fix tier modal spacing on mobile */
+    .tier-overlay {
+      padding: 0.5rem !important;
+    }
+    .tier-modal {
+      max-height: none !important;
+      min-height: 0 !important;
+      height: auto !important;
+    }
+    .tier-header {
+      padding: 1rem !important;
+    }
+    .tier-list {
+      padding: 0.75rem !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      height: auto !important;
+      overflow-y: visible !important;
+    }
+    .tier-option {
+      margin-bottom: 0.5rem !important;
+      padding: 0.75rem !important;
+    }
+    .tier-footer {
+      padding: 1rem !important;
+    }
 
     /* contact cards stack tightly */
     #contact > div { gap: 0.5rem !important; }
@@ -1543,7 +1626,7 @@
 </section>
 
 <!-- DELIVERY BANNER -->
-<div class="delivery-banner" style="margin-top:-25rem !important;">
+<div class="delivery-banner" style="margin-top:-50rem !important;">
   <div class="icon">📦</div>
   <div>
     <h3>Live Arrival Guarantee</h3>
