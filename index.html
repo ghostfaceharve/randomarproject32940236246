@@ -45,6 +45,7 @@
 
   html {
     overflow: clip;
+    touch-action: manipulation;
   }
 
   body {
@@ -56,6 +57,7 @@
     overflow-x: clip;
     width: 100%;
     position: relative;
+    touch-action: manipulation;
   }
   
   /* Container for large screens */
@@ -931,10 +933,12 @@
   @media (max-width: 768px) {
     html {
       font-size: 18px;
+      touch-action: manipulation;
     }
     
     *, *::before, *::after {
       box-sizing: border-box;
+      touch-action: manipulation;
     }
     
     html, body {
